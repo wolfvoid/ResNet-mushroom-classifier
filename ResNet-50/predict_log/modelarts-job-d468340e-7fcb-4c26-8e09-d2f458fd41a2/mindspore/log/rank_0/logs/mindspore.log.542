@@ -1,0 +1,5 @@
+[WARNING] ME(542:281473541447696,MainProcess):2024-05-07-12:37:53.574.187 [mindspore/common/_decorator.py:37] 'TensorAdd' is deprecated from version 1.1 and will be removed in a future version, use 'Add' instead.
+[INFO] ME(542:281473541447696,MainProcess):2024-05-07-12:37:55.653.219 [mindspore/train/serialization.py:475] Execute the process of loading checkpoint files.
+[INFO] ME(542:281473541447696,MainProcess):2024-05-07-12:37:56.416.681 [mindspore/train/serialization.py:529] Loading checkpoint files process is finished.
+[INFO] ME(542:281473541447696,MainProcess):2024-05-07-12:37:56.436.941 [mindspore/train/serialization.py:626] Execute the process of loading parameters into net.
+[INFO] ME(542:281473541447696,MainProcess):2024-05-07-12:37:56.583.921 [mindspore/train/serialization.py:643] Loading parameters into net is finished.

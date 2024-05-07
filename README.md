@@ -1,2 +1,5 @@
-# ResNet-mushroom-classifier
-人工智能-深度学习-毒蘑菇识别分类
+直接下载使用我的chenkpoint可以绕过训练过程。
+
+华为云上传下载数量较多需要使用OBS Browser，安装包放在这里。
+
+祝实验顺利。

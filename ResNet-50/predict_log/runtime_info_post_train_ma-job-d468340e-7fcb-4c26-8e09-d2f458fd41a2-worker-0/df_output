@@ -1,0 +1,12 @@
+Filesystem                                                                                         Size  Used Avail Use% Mounted on
+/dev/mapper/docker-252:1-1835009-5ecab757125741814b3a4cfb2727adf398d08e9d36b075487d131ab3b932d39f   49G  7.0G   40G  15% /
+tmpfs                                                                                               64M     0   64M   0% /dev
+tmpfs                                                                                              378G     0  378G   0% /sys/fs/cgroup
+/dev/mapper/vgpaas-kubernetes                                                                      3.5T  1.3G  3.3T   1% /cache
+/dev/mapper/vgpaas-dockersys                                                                       176G  2.8G  164G   2% /etc/hostname
+/dev/sda3                                                                                          434G   14G  403G   4% /usr/local/HiAI_unused
+tmpfs                                                                                              378G     0  378G   0% /dev/shm
+tmpfs                                                                                              378G  4.0K  378G   1% /run/secrets/modelarts/user
+tmpfs                                                                                              378G     0  378G   0% /proc/acpi
+tmpfs                                                                                              378G     0  378G   0% /proc/scsi
+tmpfs                                                                                              378G     0  378G   0% /sys/firmware

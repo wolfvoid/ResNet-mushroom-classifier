@@ -1,0 +1,6 @@
+Log file created at: 2024/05/07 12:37:57
+Running on machine: ma-job-d468340e-7fcb-4c26-8e09-d2f458fd41a2-worker-0
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+[INFO] PARALLEL(657,ffff977ea010,python):2024-05-07-12:37:57.448.132 [mindspore/ccsrc/frontend/parallel/costmodel_context.cc:30] GetInstance] Create costmodel_context
+[INFO] CORE(657,ffff977ea010,python):2024-05-07-12:37:57.816.522 [mindspore/core/utils/ms_context.h:237] set_param<std::basic_string<char> >] ms set context device target:Ascend
+[INFO] CORE(657,ffff977ea010,python):2024-05-07-12:37:58.056.075 [mindspore/core/utils/ms_context.cc:136] set_backend_policy] ms set context backend policy:ms

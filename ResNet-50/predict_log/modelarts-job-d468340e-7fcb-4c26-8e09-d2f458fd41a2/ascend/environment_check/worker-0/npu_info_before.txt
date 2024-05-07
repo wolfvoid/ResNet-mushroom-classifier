@@ -1,0 +1,52 @@
+/usr/local/Ascend/driver/tools/hccn_tool -i 1 -ip -g
+ipaddr:192.2.164.169
+netmask:255.255.0.0
+
+/usr/local/Ascend/driver/tools/hccn_tool -i 1 -stat -g
+packet statistics:
+mac_tx_mac_pause_num:0
+mac_rx_mac_pause_num:0
+mac_tx_pfc_pkt_num:0
+mac_tx_pfc_pri0_pkt_num:0
+mac_tx_pfc_pri1_pkt_num:0
+mac_tx_pfc_pri2_pkt_num:0
+mac_tx_pfc_pri3_pkt_num:0
+mac_tx_pfc_pri4_pkt_num:0
+mac_tx_pfc_pri5_pkt_num:0
+mac_tx_pfc_pri6_pkt_num:0
+mac_tx_pfc_pri7_pkt_num:0
+mac_rx_pfc_pkt_num:0
+mac_rx_pfc_pri0_pkt_num:0
+mac_rx_pfc_pri1_pkt_num:0
+mac_rx_pfc_pri2_pkt_num:0
+mac_rx_pfc_pri3_pkt_num:0
+mac_rx_pfc_pri4_pkt_num:0
+mac_rx_pfc_pri5_pkt_num:0
+mac_rx_pfc_pri6_pkt_num:0
+mac_rx_pfc_pri7_pkt_num:0
+mac_tx_total_pkt_num:27129057
+mac_tx_total_oct_num:1806307205
+mac_tx_bad_pkt_num:0
+mac_tx_bad_oct_num:0
+mac_rx_total_pkt_num:50387969
+mac_rx_total_oct_num:4504230852
+mac_rx_bad_pkt_num:0
+mac_rx_bad_oct_num:0
+roce_rx_rc_pkt_num:276
+roce_rx_all_pkt_num:276
+roce_rx_err_pkt_num:276
+roce_tx_rc_pkt_num:0
+roce_tx_all_pkt_num:0
+roce_tx_err_pkt_num:0
+roce_cqe_num:0
+roce_rx_cnp_pkt_num:0
+roce_tx_cnp_pkt_num:0
+nic_tx_all_pkg_num:27129026
+nic_tx_all_oct_num:1325264162
+nic_rx_all_pkg_num:50367250
+nic_rx_all_oct_num:4300498815
+
+/usr/local/Ascend/driver/tools/hccn_tool -i 1 -link_stat -g
+Get invalid major cmd.
+Enter [ hccn_tool -h ] for more details.
+

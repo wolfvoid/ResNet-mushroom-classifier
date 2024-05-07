@@ -1,0 +1,14 @@
+npu-smi version:  22.0.0.3
+
+	NPU ID                         : 1
+	Chip Count                     : 1
+
+	Chip ID                        : 0
+	Memory Usage Rate(%)           : 10
+	HBM Usage Rate(%)              : 0
+	Aicore Usage Rate(%)           : 0
+	Aicore Freq(MHZ)               : 1000
+	Aicore curFreq(MHZ)            : 1000
+	Aicore Count                   : 32
+	Temperature(C)                 : 39
+	NPU Real-time Power(W)         : 69.0

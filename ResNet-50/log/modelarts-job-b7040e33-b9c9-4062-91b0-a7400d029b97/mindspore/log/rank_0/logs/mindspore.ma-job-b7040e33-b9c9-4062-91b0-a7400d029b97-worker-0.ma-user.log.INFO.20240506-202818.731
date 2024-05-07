@@ -1,0 +1,8 @@
+Log file created at: 2024/05/06 20:28:18
+Running on machine: ma-job-b7040e33-b9c9-4062-91b0-a7400d029b97-worker-0
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+[INFO] PARALLEL(731,ffff8bbef010,python):2024-05-06-20:28:18.498.833 [mindspore/ccsrc/frontend/parallel/costmodel_context.cc:30] GetInstance] Create costmodel_context
+[INFO] CORE(731,ffff8bbef010,python):2024-05-06-20:28:18.856.625 [mindspore/core/utils/ms_context.h:237] set_param<std::basic_string<char> >] ms set context device target:Ascend
+[INFO] CORE(731,ffff8bbef010,python):2024-05-06-20:28:19.083.216 [mindspore/core/utils/ms_context.cc:136] set_backend_policy] ms set context backend policy:ms
+[INFO] PIPELINE(731,ffff8bbef010,python):2024-05-07-07:30:12.234.626 [mindspore/ccsrc/pipeline/jit/init.cc:342] operator()] Start releasing dataset handles...
+[INFO] PIPELINE(731,ffff8bbef010,python):2024-05-07-07:30:12.234.838 [mindspore/ccsrc/pipeline/jit/init.cc:345] operator()] End release dataset handles.

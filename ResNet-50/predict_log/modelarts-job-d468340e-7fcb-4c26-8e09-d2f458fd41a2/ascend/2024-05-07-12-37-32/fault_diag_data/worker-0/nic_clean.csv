@@ -1,0 +1,2 @@
+"device_id","mac_tx_pfc_pkt_num","mac_rx_pfc_pkt_num","roce_rx_rc_pkt_num","roce_rx_all_pkt_num","roce_tx_rc_pkt_num","roce_tx_all_pkt_num","t_congestion_index","r_congestion_index"
+"device-1","nan","nan","nan","nan","nan","nan","nan","nan"

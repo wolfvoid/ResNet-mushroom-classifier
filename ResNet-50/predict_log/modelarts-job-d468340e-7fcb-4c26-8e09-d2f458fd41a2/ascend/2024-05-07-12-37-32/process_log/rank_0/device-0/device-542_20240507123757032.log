@@ -1,0 +1,127 @@
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.238.643 [aicpusd_resource_limit.cpp:41][AddToCgroup][tid:30020] Add to cgroup success, cmd:[cd /var/  && sudo ./tsdaemon_add_to_usermemory.sh 30020 2 0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.238.896 [aicpusd_resource_manager.cpp:233][InitBufManager][tid:30020] Aicpu schedule SetBuffCfg successed!
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.239.161 [aicpusd_monitor.cpp:197][SetModelTimeoutFlag][tid:30020] Not set AICPU_MODEL_TIMEOUT
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.489.596 [aicpusd_worker.cpp:302][SetAffinity][tid:30045] aicpu bind tid by self, cpuSetFlag:[], index[10], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.492.896 [aicpusd_worker.cpp:302][SetAffinity][tid:30048] aicpu bind tid by self, cpuSetFlag:[], index[13], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.495.844 [aicpusd_worker.cpp:302][SetAffinity][tid:30040] aicpu bind tid by self, cpuSetFlag:[], index[5], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.500.499 [aicpusd_worker.cpp:302][SetAffinity][tid:30046] aicpu bind tid by self, cpuSetFlag:[], index[11], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.503.410 [aicpusd_worker.cpp:302][SetAffinity][tid:30042] aicpu bind tid by self, cpuSetFlag:[], index[7], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.511.459 [aicpusd_worker.cpp:302][SetAffinity][tid:30041] aicpu bind tid by self, cpuSetFlag:[], index[6], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.514.401 [aicpusd_worker.cpp:302][SetAffinity][tid:30043] aicpu bind tid by self, cpuSetFlag:[], index[8], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.516.094 [aicpusd_worker.cpp:302][SetAffinity][tid:30039] aicpu bind tid by self, cpuSetFlag:[], index[4], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.519.485 [aicpusd_worker.cpp:302][SetAffinity][tid:30044] aicpu bind tid by self, cpuSetFlag:[], index[9], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.523.624 [aicpusd_worker.cpp:302][SetAffinity][tid:30047] aicpu bind tid by self, cpuSetFlag:[], index[12], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.529.457 [aicpusd_worker.cpp:302][SetAffinity][tid:30038] aicpu bind tid by self, cpuSetFlag:[], index[3], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.532.254 [aicpusd_worker.cpp:302][SetAffinity][tid:30037] aicpu bind tid by self, cpuSetFlag:[], index[2], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.535.438 [aicpusd_worker.cpp:302][SetAffinity][tid:30036] aicpu bind tid by self, cpuSetFlag:[], index[1], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.539.862 [aicpusd_worker.cpp:302][SetAffinity][tid:30035] aicpu bind tid by self, cpuSetFlag:[], index[0], deviceId[2], res[0].
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.540.671 [aicpusd_cust_so_manager.cpp:72][InitAicpuCustSoManager][tid:30020] cust so dir name is /home/CustAiCpuUser/cust_aicpu_2_0_4090940/.
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.540.700 [main.cpp:571][main][tid:30020] Aicpu schedule start success, LD_LIBRARY_PATH=/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/:/usr/lib64/aicpu_kernels/0/aicpu_kernels_device/sand_box/:.
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:37:52.540.756 [main.cpp:580][main][tid:30020] Aicpu schedule attach and init success.
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:52.540.788 [log.cpp:42][TsdEventClient] TsdStartupResponseProc to dev[2] pid[6492] hostpid[4090940] vfId[0] is running,[tsd_event_client.cpp:208:TsdStartupResponse]30020
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:52.540.840 [log.cpp:42][TsdEventClient] Submit event TSD_EVENT_START_RSP to tsd success,[tsd_event_client.cpp:227:TsdStartupResponse]30020
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:53.600.117 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:53.600.195 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:54.600.277 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:54.600.298 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:55.600.375 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:55.600.393 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:56.600.483 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:56.600.552 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:57.600.638 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:57.600.663 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:58.600.742 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:58.600.760 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:59.600.830 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:37:59.600.848 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:00.600.926 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:00.600.955 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:01.601.038 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:01.601.063 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:02.601.136 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:02.601.156 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:03.601.225 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:03.601.246 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:04.601.323 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:04.601.346 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:05.601.419 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:05.601.439 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:06.601.511 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:06.601.532 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:07.601.608 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:07.601.635 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:08.601.705 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:08.601.723 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:09.601.792 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:09.601.810 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:10.601.881 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:10.601.896 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:11.601.971 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:11.602.001 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:12.602.076 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:12.602.096 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:13.602.166 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:13.602.183 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:14.602.254 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:14.602.272 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:15.602.343 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:15.602.359 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:16.602.428 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:16.602.444 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:17.602.513 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:17.602.530 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:18.602.597 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:18.602.612 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:19.602.690 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:19.602.716 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:20.602.787 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:20.602.805 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:21.602.874 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:21.602.890 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:22.602.968 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:22.602.994 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:23.603.064 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:23.603.081 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:24.603.152 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:24.603.169 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:25.603.239 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:25.603.256 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:26.603.325 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:26.603.340 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:27.603.409 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:27.603.425 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:28.603.496 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:28.603.512 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:29.603.583 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:29.603.601 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:30.603.671 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:30.603.688 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:31.603.760 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:31.603.778 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:32.603.854 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:32.603.880 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:33.603.953 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:33.603.978 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:34.604.053 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:34.604.076 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:35.604.148 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:35.604.164 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:36.604.237 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:36.604.263 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:37.604.339 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:37.604.365 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:38.604.439 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:38.604.456 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:39.604.525 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:39.604.542 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:40.604.612 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:40.604.627 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:41.604.696 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:41.604.713 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:42.788.776 [log.cpp:147]outContent:,[tdt_server_impl.cpp:777:ShowSizeForEveryChannel]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:42.788.825 [log.cpp:147]"DeviceSendPool: " "DeviceRecvPool: " "HostRecvPool: " "DeviceCtrlPool: {SendPool: 0, FreePool: 0}, {RecvPool: 0, FreePool: 0}",[memory_pool.cpp:707:GetDevicePoolStatus]30092
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:43.551.975 [log.cpp:42][TsdEvent] Do shutdown event proc dev[2] hostPid[4090940] procType[1],[tsd_event_client.cpp:46:TsdEventShutdown]30020
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:43.552.013 [log.cpp:42][TsdEventClient] Submit event TSD_EVENT_SHUTDOWN_RSP to tsd success,[tsd_event_client.cpp:60:TsdEventShutdown]30020
+[EVENT] TDT(30020,aicpu_scheduler):2024-05-07-12:38:43.552.027 [log.cpp:42][TsdEventClient] Wait exit.,[tsd_event_client.cpp:189:DoLoopProcessEvent]30020
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:38:43.564.632 [main.cpp:599][main][tid:30020] Aicpu schedule stopped.
+[EVENT] CCECPU(30020,aicpu_scheduler):2024-05-07-12:38:43.565.004 [aicpusd_mpi_mgr.cpp:49][PrintStatisticInfo][tid:30020] Mpi Dvpp event statistic: [0]

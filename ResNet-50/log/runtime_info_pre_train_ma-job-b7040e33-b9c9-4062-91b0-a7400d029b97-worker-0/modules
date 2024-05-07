@@ -1,0 +1,128 @@
+Module                  Size  Used by
+ipt_REJECT             16384  0
+nf_reject_ipv4         16384  1 ipt_REJECT
+xt_multiport           16384  479
+ip6table_nat           16384  0
+ip6_tables             28672  1 ip6table_nat
+ip_set_hash_netport    40960  2
+macvlan                32768  0
+ip_set_hash_ipport     36864  1
+nf_conntrack_netlink    53248  0
+xt_addrtype            16384  3
+br_netfilter           24576  0
+vport_vxlan          5267456  1
+ip_option              32768  4
+bum_extract            40960  4
+policy                 36864  4
+bum                    40960  4
+ip_set                 53248  5 policy,bum,ip_set_hash_ipport,ip_set_hash_netport,bum_extract
+nfnetlink              20480  3 nf_conntrack_netlink,ip_set
+openvswitch           270336  18 policy,bum,vport_vxlan,ip_option,bum_extract
+nf_nat_ipv6            20480  2 ip6table_nat,openvswitch
+gre                    16384  1 openvswitch
+xt_statistic           16384  5
+xt_nat                 16384  13
+ipt_MASQUERADE         16384  6
+xt_mark                16384  5
+bridge                212992  1 br_netfilter
+stp                    16384  1 bridge
+llc                    16384  2 bridge,stp
+iptable_nat            16384  1
+nf_nat_ipv4            20480  3 ipt_MASQUERADE,openvswitch,iptable_nat
+nf_nat                 45056  4 nf_nat_ipv6,nf_nat_ipv4,xt_nat,openvswitch
+xt_comment             16384  42
+xt_conntrack           16384  8
+iptable_filter         16384  1
+ip_vs_sh               16384  0
+ip_vs_wrr              16384  0
+ip_vs_rr               16384  0
+ip_vs                 184320  6 ip_vs_rr,ip_vs_sh,ip_vs_wrr
+nf_conntrack          188416  9 xt_conntrack,nf_nat,nf_nat_ipv6,ipt_MASQUERADE,nf_nat_ipv4,xt_nat,openvswitch,nf_conntrack_netlink,ip_vs
+nf_defrag_ipv6         20480  3 nf_conntrack,openvswitch,ip_vs
+nf_defrag_ipv4         16384  1 nf_conntrack
+cfg80211              798720  0
+rfkill                 36864  2 cfg80211
+kbox                   69632  0
+nls_utf8               16384  0
+isofs                  49152  0
+sysmonitor            307200  1
+kboxdriver             32768  1 kbox
+vfat                   24576  1
+fat                    90112  1 vfat
+dm_mirror              28672  0
+dm_region_hash         24576  1 dm_mirror
+dm_log                 20480  2 dm_region_hash,dm_mirror
+dm_thin_pool           86016  22
+dm_persistent_data     94208  1 dm_thin_pool
+dm_bio_prison          28672  1 dm_thin_pool
+dm_bufio               40960  1 dm_persistent_data
+libcrc32c              16384  5 nf_conntrack,nf_nat,dm_persistent_data,openvswitch,ip_vs
+dm_mod                172032  64 dm_thin_pool,dm_log,dm_mirror,dm_bufio
+drv_pcie_vnic_host     57344  0
+drv_soft_fault         57344  0
+ts_agent               69632  0
+ascend_queue           53248  0
+drv_svm_peermem        20480  0
+drv_tsdrv_platform_host    69632  0
+drv_devdrv_host       901120  2 ts_agent,drv_tsdrv_platform_host
+drv_pcie_hdc_host     327680  11 ascend_queue
+ascend_event_sched_host   196608  0
+drv_devmm_host        638976  2 drv_svm_peermem,ascend_queue
+drv_devmng_host       839680  12 drv_soft_fault,drv_devdrv_host,ascend_queue,ts_agent,drv_tsdrv_platform_host,drv_devmm_host,ascend_event_sched_host
+drv_davinci_intf_host    49152  48 drv_soft_fault,drv_devdrv_host,ascend_queue,drv_devmng_host,drv_devmm_host,ascend_event_sched_host
+drv_virtmng_host      278528  4 drv_devdrv_host,drv_devmng_host,drv_devmm_host,drv_pcie_hdc_host
+aes_ce_blk             28672  0
+crypto_simd            16384  1 aes_ce_blk
+cryptd                 32768  1 crypto_simd
+aes_ce_cipher          16384  1 aes_ce_blk
+crc32_ce               16384  47
+ghash_ce               20480  0
+sha2_ce                16384  0
+sha256_arm64           24576  1 sha2_ce
+sha1_ce                16384  0
+realtek                20480  4
+sbsa_gwdt              16384  0
+hns3                  110592  0
+hclge                 253952  4
+hnae3                  16384  2 hclge,hns3
+crct10dif_ce           16384  6
+sg                     53248  0
+ofpart                 16384  0
+nvme                  143360  3
+drv_pcie_host         331776  10 drv_virtmng_host,drv_soft_fault,drv_pcie_vnic_host,drv_devdrv_host,ascend_queue,drv_tsdrv_platform_host,drv_devmng_host,drv_devmm_host,drv_pcie_hdc_host,ascend_event_sched_host
+cmdlinepart            16384  0
+drv_vascend            16384  1 drv_virtmng_host
+hi_sfc                 28672  0
+i2c_designware_platform    16384  0
+mtd                    81920  4 cmdlinepart,ofpart,hi_sfc
+ipmi_ssif              36864  0
+i2c_designware_core    20480  1 i2c_designware_platform
+spi_dw_mmio            16384  0
+sch_fq_codel           20480  29
+nfsd                  401408  13
+auth_rpcgss            73728  1 nfsd
+nfs_acl                16384  1 nfsd
+lockd                 114688  1 nfsd
+grace                  16384  2 nfsd,lockd
+sunrpc                454656  17 nfsd,auth_rpcgss,lockd,nfs_acl
+ksecurec               28672  16 drv_virtmng_host,drv_svm_peermem,drv_pcie_host,drv_soft_fault,drv_pcie_vnic_host,drv_devdrv_host,drv_davinci_intf_host,ts_agent,kboxdriver,kbox,drv_tsdrv_platform_host,drv_devmng_host,drv_devmm_host,drv_pcie_hdc_host,sysmonitor,ascend_event_sched_host
+ip_tables              28672  2 iptable_filter,iptable_nat
+ext4                  770048  26 kbox
+mbcache                16384  1 ext4
+jbd2                  143360  1 ext4
+sd_mod                 57344  3
+virtio_scsi            20480  0
+hinic                 696320  0
+hisi_sas_v3_hw         53248  0
+virtio_pci             28672  0
+hisi_sas_main          69632  1 hisi_sas_v3_hw
+ahci                   40960  2
+virtio_ring            32768  2 virtio_scsi,virtio_pci
+libsas                102400  2 hisi_sas_v3_hw,hisi_sas_main
+virtio                 16384  2 virtio_scsi,virtio_pci
+libahci                45056  1 ahci
+ipmi_si                69632  0
+ipmi_devintf           20480  0
+libata                299008  4 libahci,ahci,hisi_sas_main,libsas
+scsi_transport_sas     45056  3 hisi_sas_v3_hw,hisi_sas_main,libsas
+ipmi_msghandler        77824  3 ipmi_devintf,ipmi_si,ipmi_ssif

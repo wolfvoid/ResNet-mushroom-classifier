@@ -1,0 +1,9 @@
+Download data.
+INFO:root:List OBS time cost: 0.00 seconds.
+INFO:root:Copy parallel total time cost: 0.05 seconds.
+[WARNING] ME(542:281473541447696,MainProcess):2024-05-07-12:37:53.574.187 [mindspore/common/_decorator.py:37] 'TensorAdd' is deprecated from version 1.1 and will be removed in a future version, use 'Add' instead.
+预测的蘑菇标签为:
+	Hygrocybe浅黄褐湿伞,伞菌目,蜡伞科,湿伞属,分布于香港(见于松仔园),有毒
+
+ResNet50 prediction success!
+

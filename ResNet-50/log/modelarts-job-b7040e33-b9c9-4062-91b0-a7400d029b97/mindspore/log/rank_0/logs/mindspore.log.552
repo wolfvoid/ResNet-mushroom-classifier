@@ -1,0 +1,39 @@
+[WARNING] ME(552:281473351708688,MainProcess):2024-05-06-20:28:12.270.144 [mindspore/common/_decorator.py:37] 'TensorAdd' is deprecated from version 1.1 and will be removed in a future version, use 'Add' instead.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-20:28:26.261.931 [mindspore/_extends/parse/namespace.py:121] 'Momentum' object has no attribute or method: 'grad_centralization_flags', so will return None.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-20:36:52.688.817 [mindspore/train/serialization.py:692] Execute the process of saving graph.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-21:06:25.772.04 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-21:06:26.533.974 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-21:42:58.582.072 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-21:43:00.105.47 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-22:19:25.102.236 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-22:19:26.435.282 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-22:56:08.857.30 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-22:56:09.384.505 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-23:32:51.257.295 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-06-23:32:52.562.337 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-00:09:45.846.592 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-00:09:47.357.942 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-00:46:26.724.422 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-00:46:27.960.608 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-01:23:21.246.095 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-01:23:22.439.382 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-02:00:08.805.742 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-02:00:10.206.070 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-02:36:49.822.80 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-02:36:50.527.787 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-03:13:34.426.644 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-03:13:35.836.496 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-03:50:15.966.35 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-03:50:16.541.310 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-04:26:54.850.817 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-04:26:56.946.97 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-05:03:31.972.733 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-05:03:33.478.410 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-05:40:07.957.099 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-05:40:09.370.421 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-06:16:43.166.573 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-06:16:44.496.830 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-06:53:25.521.086 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-06:53:26.816.659 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-07:30:03.771.358 [mindspore/train/serialization.py:294] Execute the process of saving checkpoint files.
+[INFO] ME(552:281473351708688,MainProcess):2024-05-07-07:30:05.913.13 [mindspore/train/serialization.py:347] Saving checkpoint process is finished.

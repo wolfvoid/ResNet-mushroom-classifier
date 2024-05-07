@@ -1,0 +1,916 @@
+time="2024-05-06T20:27:18+08:00" level=info msg="init logger successful" file="init.go:55" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:18+08:00" level=info msg="current user 1000:100" file="init.go:57" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:18+08:00" level=info msg="report event InitStart success" file="event.go:95" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:18+08:00" level=info msg="init command: bash /home/ma-user/training/init.sh 's3://wolf-dl-bj4/ResNet-50/resnet/'" file="init.go:81" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="scc is already installed, skipping this step..." Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="[init] toolkit_obs_upload_pid = 59" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="[init] running at 2024-05-06-20:27:19" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="[init] ip of the pod: 172.16.0.124" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:207" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:19+08:00" level=info msg="obs dir = s3://modelarts-training-log-cn-north-4/b7040e33-b9c9-4062-91b0-a7400d029b97/worker-0" file="upload.go:210" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:19+08:00" level=info msg="num of workers = 8" file="upload.go:215" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:19+08:00" level=info msg="start the periodic upload task, upload Period = 5 seconds " file="upload.go:221" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:19+08:00" level=info msg="report event DetectStart success" file="event.go:95" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="[task]Detect item: disk-size cache" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="[detect] code: 0, message: ok, item: disk-size cache" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="[task]Detect item: dns" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="[detect] code: 0, message: ok, item: dns" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="[task]Detect item: disk-size root" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:19+08:00" level=info msg="[detect] code: 0, message: ok, item: disk-size root" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:20+08:00" level=info msg="[task]Detect item: disk-size shm" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:20+08:00" level=info msg="[detect] code: 0, message: ok, item: disk-size shm" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:20+08:00" level=info msg="report event DetectFinish success" file="event.go:95" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+cp: cannot stat '/home/ma-user/training/runtime-scripts-v2/scc': No such file or directory
+time="2024-05-06T20:27:24+08:00" level=info msg="MA_OUTPUT_PRELOAD_SUFFIX: ." file="preload.go:27" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:24+08:00" level=info msg="modelarts output channel preload to memarts switch is: false." file="preload.go:40" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:24+08:00" level=info msg="[init] autosearch_path is empty, skip the autosearch download" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:24+08:00" level=info msg="report event DownloadCodeStart success" file="event.go:95" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:24+08:00" level=info msg="[init] start to download the code" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:24+08:00" level=info msg="[init] code_url: s3://wolf-dl-bj4/ResNet-50/resnet/" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:24+08:00" level=info msg="[init] modelarts_downloader_job_pid = 1283" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:25+08:00" level=info msg="Main: modelarts-downloader starting with Namespace(recursive=True, skip_creating_dir=False, type='common', verbose=False, trace=False, src='s3://wolf-dl-bj4/ResNet-50/resnet/', dst='./')" Component=PythonScripts Platform=ModelArts-Service
+[ModelArts Service Log]2024-05-06 20:27:25,470 - file_io.py[line:2717] - INFO: List OBS time cost: 0.06 seconds.
+[ModelArts Service Log]2024-05-06 20:27:25,536 - file_io.py[line:2758] - INFO: Copy parallel total time cost: 0.13 seconds.
+time="2024-05-06T20:27:25+08:00" level=info msg="[init] code is now in /home/ma-user/modelarts/user-job-dir" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:25+08:00" level=info msg="[init] download the code use 1.131s" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:27+08:00" level=info msg="report event DownloadCodeSuccess success" file="event.go:95" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:27+08:00" level=info msg="[init] record_dir is empty, skip the code upload" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:27+08:00" level=info msg="[init] inputs_handler_job_pid = 1399" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:27+08:00" level=info msg="report event DownloadInputStart success" file="event.go:95" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:27+08:00" level=info msg="caching the content of [data_url] inputs" Component=PythonScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:28+08:00" level=info msg="Main: modelarts-downloader starting with Namespace(recursive=True, skip_creating_dir=True, type='common', verbose=False, trace=False, src='s3://wolf-dl-bj4/ResNet-50/mushrooms/train/', dst='./')" Component=PythonScripts Platform=ModelArts-Service
+[ModelArts Service Log]2024-05-06 20:27:28,442 - file_io.py[line:1543] - INFO: Listing OBS: 1000
+[ModelArts Service Log]2024-05-06 20:27:28,571 - file_io.py[line:1543] - INFO: Listing OBS: 2000
+[ModelArts Service Log]2024-05-06 20:27:28,701 - file_io.py[line:1543] - INFO: Listing OBS: 3000
+[ModelArts Service Log]2024-05-06 20:27:28,827 - file_io.py[line:1543] - INFO: Listing OBS: 4000
+[ModelArts Service Log]2024-05-06 20:27:28,956 - file_io.py[line:1543] - INFO: Listing OBS: 5000
+[ModelArts Service Log]2024-05-06 20:27:29,056 - file_io.py[line:1543] - INFO: Listing OBS: 6000
+[ModelArts Service Log]2024-05-06 20:27:29,206 - file_io.py[line:1416] - INFO: Listing OBS: 1000
+[ModelArts Service Log]2024-05-06 20:27:29,248 - file_io.py[line:1416] - INFO: Listing OBS: 2000
+[ModelArts Service Log]2024-05-06 20:27:29,303 - file_io.py[line:1416] - INFO: Listing OBS: 3000
+[ModelArts Service Log]2024-05-06 20:27:29,335 - file_io.py[line:1416] - INFO: Listing OBS: 4000
+[ModelArts Service Log]2024-05-06 20:27:29,346 - file_io.py[line:1416] - INFO: Listing OBS: 5000
+[ModelArts Service Log]2024-05-06 20:27:29,359 - file_io.py[line:1416] - INFO: Listing OBS: 6000
+[ModelArts Service Log]2024-05-06 20:27:29,437 - file_io.py[line:2717] - INFO: List OBS time cost: 0.38 seconds.
+[ModelArts Service Log]2024-05-06 20:27:30,702 - file_io.py[line:2784] - INFO: pid: None.	1000/6714
+[ModelArts Service Log]2024-05-06 20:27:31,766 - file_io.py[line:2784] - INFO: pid: None.	2000/6714
+[ModelArts Service Log]2024-05-06 20:27:32,767 - file_io.py[line:2784] - INFO: pid: None.	3000/6714
+[ModelArts Service Log]2024-05-06 20:27:33,753 - file_io.py[line:2784] - INFO: pid: None.	4000/6714
+[ModelArts Service Log]2024-05-06 20:27:34,752 - file_io.py[line:2784] - INFO: pid: None.	5000/6714
+[ModelArts Service Log]2024-05-06 20:27:35,768 - file_io.py[line:2784] - INFO: pid: None.	6000/6714
+[ModelArts Service Log]2024-05-06 20:27:36,517 - file_io.py[line:2758] - INFO: Copy parallel total time cost: 7.45 seconds.
+time="2024-05-06T20:27:36+08:00" level=info msg="cache the content of [data_url] inputs successfully" Component=PythonScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:36+08:00" level=info msg="it can be accessed at local dir [/home/ma-user/modelarts/inputs/data_url_0]" Component=PythonScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:36+08:00" level=info msg="report event DownloadInputSuccess success" file="event.go:95" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:37+08:00" level=info msg="mkdir for local output dir" Component=PythonScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:37+08:00" level=info msg="output-handler finalized" Component=PythonScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:37+08:00" level=info msg="there is no need to download obs channels file" file="download_by_channels.go:27" Command=obs/download_by_channels Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:37+08:00" level=info msg="[init] exiting at 2024-05-06-20:27:37" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:37+08:00" level=info msg="[init] stop toolkit_obs_upload_pid = 59 by signal SIGTERM" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:37+08:00" level=info msg="the final upload is in progress..." file="upload.go:232" Command=obs/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:37+08:00" level=info msg="[init] toolkit_obs_upload 59 ret_code is 0" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:37+08:00" level=info msg="[init] exit with 0" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:37+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:207" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:37+08:00" level=info msg="obs dir = s3://modelarts-training-log-cn-north-4/b7040e33-b9c9-4062-91b0-a7400d029b97/worker-0" file="upload.go:210" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:37+08:00" level=info msg="num of workers = 8" file="upload.go:215" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:37+08:00" level=info msg="MA_OUTPUT_PRELOAD_SUFFIX: ." file="preload.go:27" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:37+08:00" level=info msg="modelarts output channel preload to memarts switch is: false." file="preload.go:40" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service Task=
+time="2024-05-06T20:27:37+08:00" level=info msg="report event InitExit success" file="event.go:95" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:37+08:00" level=info msg="bootstrap is exiting with exit code 0" file="bootstrap.go:306" Command=bootstrap/init Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:40+08:00" level=info msg="init logger successful" file="run_train.go:132" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:40+08:00" level=info msg="task-training container update heartbeat file started" file="heartbeat.go:97" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:40+08:00" level=info msg="the core file size limit is 5242880\n" file="core_file_collect.go:34" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:40+08:00" level=warning msg="create core file symbolic link to log path failed, skip core file collection, error: current core_pattern is |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %e\n, does not have /tmp/core-file prefix" file="run_train.go:139" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:40+08:00" level=info msg="Waiting for SCC server start." file="run_train.go:574" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:40+08:00" level=info msg="init logger successful" file="upload.go:77" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:40+08:00" level=info msg="start checking secret refresh time." file="secret.go:46" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:40+08:00" level=info msg="current user 1000:100" file="upload.go:85" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:40+08:00" level=info msg="report event SidecarStart success" file="event.go:95" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="obs download task in progress, local dir: /home/ma-user/training/runtime-scripts-v2/sidecar-container/, obs dir: /modelarts-training-log-cn-north-4/train-knowledge, num workers: 1" file="download.go:158" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=ma_knowledge_download
+time="2024-05-06T20:27:41+08:00" level=info msg="obs download complete, successful: 0, failed: 0, skipped: 0, total downloaded bytes: 0, total elapsed time: 0s" file="download.go:195" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service Task=ma_knowledge_download
+time="2024-05-06T20:27:41+08:00" level=warning msg="chmod data turbo host path /home/ma-user/training/runtime-scripts-v2/sidecar-container/diagnose_knowledge.json failed, error: chmod /home/ma-user/training/runtime-scripts-v2/sidecar-container/diagnose_knowledge.json: no such file or directory" file="upload.go:57" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="upload command: /home/ma-user/training/sidecar.sh" file="upload.go:112" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="watch periodically task-training container heartbeat file started, periodic interval：heartbeat update:60s, heartbeat check:60s, heartbeat timeout:180s" file="heartbeat.go:42" Command=bootstrap/upload Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="scc is already installed, skipping this step..." Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="[sidecar] running at 2024-05-06-20:27:41" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="[sidecar] will upload using 8 workers" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="[sidecar] toolkit_obs_upload_by_channels_pid = 57" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="[sidecar] scc server pid = 58" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="[sidecar] fault diagnose starting" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="[sidecar] waiting for training complete" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=error msg="open knowledge file /home/ma-user/training/runtime-scripts-v2/sidecar-container/diagnose_knowledge.json failed: open /home/ma-user/training/runtime-scripts-v2/sidecar-container/diagnose_knowledge.json: no such file or directory" file="analyzer.go:181" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="analyzer knowledge comes from [/home/ma-user/training/runtime-scripts-v2/sidecar-container/diagnose_knowledge_default.json]" file="analyzer.go:171" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="diagnosis http server listening at 127.0.0.1:9627" file="analyzer.go:446" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="Starting SCC server on 127.0.0.1:33496" file="server.go:52" Command=scc-server Component=ma-scc-server Platform=ModelArts-Service
+time="2024-05-06T20:27:41+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:207" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2024-05-06T20:27:41+08:00" level=info msg="obs dir = s3://modelarts-training-log-cn-north-4/b7040e33-b9c9-4062-91b0-a7400d029b97/worker-0" file="upload.go:210" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2024-05-06T20:27:41+08:00" level=info msg="enable append upload mode" file="upload.go:213" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2024-05-06T20:27:41+08:00" level=info msg="num of workers = 8" file="upload.go:215" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2024-05-06T20:27:41+08:00" level=info msg="start the periodic upload task, upload Period = 5 seconds " file="upload.go:221" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2024-05-06T20:27:41+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:207" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url
+time="2024-05-06T20:27:41+08:00" level=info msg="obs dir = obs://wolf-dl-bj4/ResNet-50/log/" file="upload.go:210" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url
+time="2024-05-06T20:27:41+08:00" level=info msg="num of workers = 8" file="upload.go:215" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url
+time="2024-05-06T20:27:41+08:00" level=info msg="start the periodic upload task, upload Period = 30 seconds " file="upload.go:221" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url
+time="2024-05-06T20:27:41+08:00" level=info msg="local dir = /home/ma-user/modelarts/outputs/train_url_0/" file="upload.go:207" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url
+time="2024-05-06T20:27:41+08:00" level=info msg="obs dir = s3://wolf-dl-bj4/ResNet-50/output/" file="upload.go:210" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url
+time="2024-05-06T20:27:41+08:00" level=info msg="num of workers = 8" file="upload.go:215" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url
+time="2024-05-06T20:27:41+08:00" level=info msg="start the periodic upload task, upload Period = 30 seconds " file="upload.go:221" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url
+time="2024-05-06T20:27:45+08:00" level=info msg="SCC server has been init, training continue." file="run_train.go:592" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:45+08:00" level=info msg="report event DetectStart success" file="event.go:95" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:45+08:00" level=info msg="SOC_VERSION environment variable is equal to Ascend910A, not empty, and needs to be unset" file="ascend_check.go:83" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:45+08:00" level=info msg="SOC_VERSION environment variable unset successfully" file="ascend_check.go:88" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:45+08:00" level=info msg="dcmi checking" file="ascend_check.go:192" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:45+08:00" level=warning msg="wait command failed, error: exit status 1" file="ascend_check.go:198" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:45+08:00" level=warning msg="the device has an error code at the warning level, details: WARN, card:0, device:0, device_health:1, net_health_state:0, err_code_num:1, err_code_list:2160951299;" file="ascend_check.go:213" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:45+08:00" level=info msg="dcmi check successful, details: driver_health_state:0, device_health_state:0, net_health_state:0" file="ascend_check.go:224" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:45+08:00" level=warning msg="ascend-dmi executor create failed, error: ascend-dmi is not found in the /usr/local/Ascend/toolbox path, skip this detect step" file="ascend_check.go:107" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:46+08:00" level=info msg="MA_OUTPUT_PRELOAD_SUFFIX: ." file="preload.go:27" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2024-05-06T20:27:46+08:00" level=info msg="modelarts output channel preload to memarts switch is: false." file="preload.go:40" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2024-05-06T20:27:46+08:00" level=info msg="the power of all npus is normal, [70.900000]" file="ascend_check.go:121" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:46+08:00" level=info msg="report event DetectFinish success" file="event.go:95" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:46+08:00" level=info msg="current user name: ma-user" file="image_check.go:69" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:46+08:00" level=info msg="current uid: 1000" file="image_check.go:70" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:46+08:00" level=info msg="current gid: 100" file="image_check.go:71" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:46+08:00" level=info msg="image check passed" file="image_check.go:56" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:46+08:00" level=info msg="hccn sampler routine is started, sample interval is 10s" file="sample_routine.go:97" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="starting MAOS agent metrics exporter" file="metrics_exporter.go:274" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="npu-smi sampler routine is started, sample interval is 10s" file="sample_routine.go:100" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="report event TrainingStart success" file="event.go:95" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="pre train command: mkdir -p ~/.pip; echo -e '[global]\\ntrusted-host = repo.myhuaweicloud.com\\nindex-url = http://repo.myhuaweicloud.com/repository/pypi/simple/\\ntimeout = 120' > ~/.pip/pip.conf;  bash /home/ma-user/modelarts/run/detect_hang.sh;" file="run_train.go:868" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="[task] hang-detect" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="[task] toolkit_hang_detect_pid = 116" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="pre runtime info collection started" file="run_train.go:1128" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting cuda_version, reason: not a gpu job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting ib_stats, reason: not an infiniband job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting nfs_mount_path_check, reason: MA_NFS_MOUNT_VOLUMES env is not found" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting ethernet_qos, reason: not an infiniband job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting gpu_driver_version, reason: not a gpu job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting cudnn_version, reason: not a gpu job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting gpu_info, reason: not a gpu job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting ib_driver_version_on_host, reason: not an infiniband job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting ofed_info_output, reason: not an infiniband job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting nccl_version, reason: not a gpu job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting ib_gids, reason: not an infiniband job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting ib_dev_to_net_dev, reason: not an infiniband job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting gpu_topo, reason: not a gpu job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:48+08:00" level=info msg="skip collecting ascend_dmi, reason: ascend-dmi executor create failed, error: ascend-dmi is not found in the /usr/local/Ascend/toolbox path" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:49+08:00" level=info msg="skip collecting hccn_tool, reason: empty results" file="collector.go:162" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="pre runtime info collection finished" file="run_train.go:1144" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="the pre-training script(ma-pre-start.sh or ma-pre-start.py) not found on env, bootfile dir, or code dir, skipping execution" file="run_train.go:946" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="run command: bash /home/ma-user/modelarts/run/run_train_v2.sh '/home/ma-user/modelarts/user-job-dir/resnet/resnet50_train.py' '--data_url=/home/ma-user/modelarts/inputs/data_url_0/' '--train_url=/home/ma-user/modelarts/outputs/train_url_0/' " file="run_train.go:478" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="auto set NCCL_SOCKET_IFNAME env: NCCL_SOCKET_IFNAME=eth0" file="run_train.go:423" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="failed to read user policy config: env MA_RECOVER_POLICY not exists or empty, will get recover policy from envs" file="policy.go:594" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="runtime policy to be applied: {\"api_version\":\"0.0.1\",\"actions\":{\"ascend_log_diag_when_fail\":{\"max_num\":32767},\"ascend_log_diag_when_hang\":{\"max_num\":1},\"exit\":{\"max_num\":32767},\"npu_proc_restart\":{\"max_num\":32767,\"downgrade\":\"job_reschedule_with_taint\"}},\"exception_handle\":[{\"exception\":{\"type\":\"hanging\"},\"handle_action\":\"ascend_log_diag_when_hang\",\"priority\":0},{\"exception\":{\"type\":\"npu_reset_configmap\"},\"handle_action\":\"npu_proc_restart\",\"priority\":-100},{\"exception\":{\"type\":\"gpu_reset_configmap\"},\"handle_action\":\"gpu_proc_restart\",\"priority\":-100},{\"exception\":{\"type\":\"custom_pattern\",\"value\":\"CUDA_ERROR_ECC_UNCORRECTABLE\"},\"handle_action\":\"gpu_proc_restart\",\"priority\":-100},{\"exception\":{\"type\":\"custom_pattern\",\"value\":\"uncorrectable ECC error\"},\"handle_action\":\"gpu_proc_restart\",\"priority\":-100},{\"exception\":{\"type\":\"gpu_smi\"},\"handle_action\":\"gpu_proc_restart\",\"priority\":-100},{\"exception\":{\"type\":\"exit_code\",\"value\":\"137\"},\"handle_action\":\"pod_reschedule\",\"priority\":-100},{\"exception\":{\"type\":\"ascend_diag_result\"},\"handle_action\":\"pod_reschedule\",\"priority\":-100},{\"exception\":{\"type\":\"first_fail_term\"},\"handle_action\":\"ascend_log_diag_when_fail\",\"priority\":-100}]}" file="policy.go:608" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: listenAndServe) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="http server listening at 172.16.0.124:14133" file="server.go:62" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: checkIn) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=warning msg="[gpu driver version validator]skip collecting environment information, reason: GPUDriverVersion is empty, maybe it's not a GPU job" file="validate.go:66" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=warning msg="[firmware version validator]skip collecting environment information, reason: firmware version is empty" file="validate.go:66" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=warning msg="[ofed version validator]skip collecting environment information, reason: ofed version is empty" file="validate.go:66" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: checkIn) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event(name: CheckedInEvent, msg: ) is being handled, len: 0" file="controller.go:72" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="received check-in from task worker-0" file="handler.go:199" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="[consistency-validate] single-node job, skip the consistency validate." file="validate.go:74" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="all task worker checked-in, will start training" file="handler.go:438" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: watchNPUResetConfig) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="done handling event(name: CheckedInEvent, msg: ), started listeners: [startAndWait instructAllFollowersStart watchNPURecoverStatus watchNPUResetConfig watchGPUResetConfig watchHangMetric watchAgentFaultCode watchDynamicProfiling]" file="controller.go:86" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: startAndWait) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: watchGPUResetConfig) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: watchHangMetric) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: watchGPUResetConfig) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: watchAgentFaultCode) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="no agent fault code catch policy, will not listen maos node agent fault code" file="listener.go:669" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: watchAgentFaultCode) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="add path /home/ma-user/modelarts/log to metric file watcher sucessful" file="watcher.go:65" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: instructAllFollowersStart) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="trainingProcHang metric file watcher is running, metric file path: /home/ma-user/modelarts/log" file="watcher.go:74" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: instructAllFollowersStart) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=warning msg="hot reset config file watcher is empty, skip the watch step" file="listener.go:484" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: watchNPUResetConfig) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: watchDynamicProfiling) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: watchNPURecoverStatus) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="add path /home/ma-user/modelarts/dynamic-profiling-config to dynamic profiling config file watcher sucessful" file="watcher.go:64" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=error msg="try to listen agent metrics failed, err: no maos-node-agent metrics file found, this feature may not be turned on for this pool, skip listening, policy related to npu recover may not work" file="listener.go:736" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="event listener(name: watchNPURecoverStatus) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:50+08:00" level=info msg="dynamic profiling config watcher is running, metric file path: /home/ma-user/modelarts/dynamic-profiling-config" file="watcher.go:73" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:51+08:00" level=info msg="cmd env: [LD_LIBRARY_PATH=/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/driver/lib64/driver:/usr/local/lib/:/usr/lib/aarch64-linux-gnu/hdf5/serial:/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/ascend-toolkit/latest/lib64:/usr/local/Ascend/ascend-toolkit/latest/compiler/lib64/plugin/opskernel:/usr/local/Ascend/ascend-toolkit/latest/compiler/lib64/plugin/nnengine::/usr/local/seccomponent/lib/:/usr/local/seccomponent/lib/openssl/ TOOLCHAIN_HOME=/usr/local/Ascend/ascend-toolkit/latest/toolkit MA_ENGINE_VERSION=mindspore_1.7.0-cann_5.1.0-py_3.7-euler_2.8.3-aarch64 MA_NUM_HOSTS=1 VC_WORKER_HOSTS=ma-job-b7040e33-b9c9-4062-91b0-a7400d029b97-worker-0.ma-job-b7040e33-b9c9-4062-91b0-a7400d029b97 VK_TASK_INDEX=0 MA_SCRIPT_INTERPRETER= AOM_ENDPOINT=https://aom.cn-north-4.myhuaweicloud.com MA_MAX_BACKOFF=0 HOSTNAME=ma-job-b7040e33-b9c9-4062-91b0-a7400d029b97-worker-0 PIP_OPTS=--trusted-host szg1.artifactory.inhuawei.com -i https://szg1.artifactory.inhuawei.com/artifactory/api/pypi/cbu-pypi-public/simple/ --user MA_COLLECT_CORE_FILE=1 NPU-VISIBLE-DEVICES=0 MA_ALGORITHM_ID=e6de39e5-56a7-4c5f-9a88-9de616c909b7 ENV_NAME=MindSpore MA_IAM_USER_ID=8fdf20f1f8c84acc99ae6ce6f91e26a7 MA_CURRENT_IP=172.16.0.124 MA_MOUNT_PATH=/home/ma-user/modelarts ASCEND_AICPU_PATH=/usr/local/Ascend/ascend-toolkit/latest MA_ENGINE_TYPE=ascend-powered-engine MODELARTS_SCC_SERVICE_PORT=33496 MA_HOME=/home/ma-user KUBERNETES_PORT_443_TCP_PROTO=tcp KUBERNETES_PORT_443_TCP_ADDR=10.247.0.1 MA_VJ_NAME=ma-job-b7040e33-b9c9-4062-91b0-a7400d029b97 FE_FLAG=1 MA_PIP_URL=http://repo.myhuaweicloud.com/repository/pypi/simple/ MA_CODE_DIR=/home/ma-user/modelarts/user-job-dir/resnet MA_TRAINING_CONTAINER_HEARTBEAT_WATCH_IS_ON=1 MA_RUNTIME_INFO_COLLECTION=true MA_WORKING_DIR=/home/ma-user/modelarts/user-job-dir KUBERNETES_PORT=tcp://10.247.0.1:443 MA_ENABLE_GPU_RECOVER=false PWD=/home/ma-user MA_DIAG_MODE_ENV= HOME=/home/ma-user MA_CURRENT_HOST_IP=192.168.0.208 CES_ENDPOINT=https://ces.cn-north-4.myhuaweicloud.com S3_USE_HTTPS=1 MA_LOG_DIR=/home/ma-user/modelarts/log KUBERNETES_SERVICE_PORT_HTTPS=443 SITE_PACKAGES_PATH=/home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages KUBERNETES_PORT_443_TCP_PORT=443 IS_NEW_IMAGE_FRAMEWORK=true RANK_TABLE_FILE=/user/config NNAE_PATH=/usr/local/Ascend/nnae/latest MA_NUM_GPUS=1 S3_ENDPOINT=https://obs.cn-north-4.myhuaweicloud.com SCC_CONFIG_PATH=/home/ma-user/modelarts/scc/conf_10x/scc.conf SFS_ENDPOINT=https://sfs-turbo.cn-north-4.myhuaweicloud.com MA_CURRENT_INSTANCE_ID=4b253f20-8883-42ea-b365-5e64a0af02c4 MA_USER_LOG_DIR_OBS=/wolf-dl-bj4/ResNet-50/log/ MA_SCC_PYTHON_ADAPTER=/home/ma-user/modelarts/scc MA_PIP_HOST=repo.myhuaweicloud.com MODELARTS_MODEL_PATH=/home/ma-user/infer/model/1 S3_VERIFY_SSL=0 PAAS_POD_ID=4b253f20-8883-42ea-b365-5e64a0af02c4 KUBERNETES_PORT_443_TCP=tcp://10.247.0.1:443 OPTION_EXEC_EXTERN_PLUGIN_PATH=/usr/local/Ascend/fwkacllib/lib64/plugin/opskernel/libfe.so:/usr/local/Ascend/fwkacllib/lib64/plugin/opskernel/libaicpu_plugin.so:/usr/local/Ascend/fwkacllib/lib64/plugin/opskernel/librts_engine.so:/usr/local/Ascend/fwkacllib/lib64/plugin/opskernel/libge_local_engine.so MA_INPUTS={\"inputs\":[{\"name\":\"data_url\",\"description\":\"输入来源\",\"local_dir\":\"/home/ma-user/modelarts/inputs/data_url_0\",\"access_method\":\"parameter\",\"remote\":{\"obs\":{\"obs_url\":\"s3://wolf-dl-bj4/ResNet-50/mushrooms/train/\"}},\"remote_constraints\":[{\"data_type\":\"obs\"}]}]}  VC_TASK_INDEX=0 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python MODELARTS_BATCH_PREDICT_URL=http://127.0.0.1:8080 ASCEND_OPP_PATH=/usr/local/Ascend/ascend-toolkit/latest/opp MA_RUN_MODE_ENV=normal VC_WORKER_NUM=1 MA_HANG_DETECT=1 MA_IAM_PROJECT_ID=1ea4888d5155462689dc66614b29dc59 SDR_LIBRARY_PATH=/usr/local/route MA_PYTHON_VERSION=3 SHLVL=1 DEPLOY_MODE=1 ANACONDA_DIR=/home/ma-user/anaconda3 MA_TERMINATION_GRACE_PERIOD_SECONDS=60 PYTHONPATH=/usr/local/Ascend/tfplugin/latest/python/site-packages:/usr/local/Ascend/ascend-toolkit/latest/python/site-packages:/usr/local/Ascend/ascend-toolkit/latest/opp/op_impl/built-in/ai_core/tbe:/usr/local/seccomponent/lib:/home/ma-user/infer/model/1 MA_OUTPUTS={\"outputs\":[{\"name\":\"train_url\",\"description\":\"输出数据\",\"local_dir\":\"/home/ma-user/modelarts/outputs/train_url_0\",\"access_method\":\"parameter\",\"remote\":{\"obs\":{\"obs_url\":\"s3://wolf-dl-bj4/ResNet-50/output/\"}},\"mode\":\"upload_periodically\",\"period\":30,\"prefetch_to_local\":false}]}  MA_DETECT_ITEM={\"ascend_check\":1,\"disk_size_check\":1,\"dns_check\":1} MA_CURRENT_INSTANCE_NAME=ma-job-b7040e33-b9c9-4062-91b0-a7400d029b97-worker-0 KUBERNETES_SERVICE_PORT=443 MA_RUNTIME_RECOVER_SYS_PORT=14133 ME_TBE_PLUGIN_PATH=/usr/local/Ascend/opp/framework/built-in/tensorflow/ CREDENTIAL_PROFILES_FILE=/run/secrets/modelarts/user/config MA_JOB_DIR=/home/ma-user/modelarts/user-job-dir MA_TERMINATION_MESSAGE_PATH=/home/ma-user/modelarts/log/termination-log PATH=/home/ma-user/anaconda/bin:/home/ma-user/anaconda/bin:/home/ma-user/anaconda3/envs/MindSpore/bin:/usr/local/Ascend/ascend-toolkit/latest/bin:/usr/local/Ascend/ascend-toolkit/latest/compiler/ccec_compiler/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ma-user/.local/bin MA_ENABLE_ASCEND_DEVICE_LOG_EXPORT=false MA_APIGW_ENDPOINT=https://modelarts.cn-north-4.myhuaweicloud.com MA_TRAINING_MOUNT_PATH=/modelarts-job-b7040e33-b9c9-4062-91b0-a7400d029b97 MA_CUSTOM_METRICS_EXPORTER_MAOS_AGENT_ON=true MA_TASK_NAME=worker MA_NAMESPACE=default KUBERNETES_SERVICE_HOST=10.247.0.1 ASCEND_AUTOML_PATH=/usr/local/Ascend/ascend-toolkit/latest/tools AICPU_FLAG=1 MA_CUSTOM_METRICS_EXPORTER_ON=false MA_CONSISTENCY_VALIDATE=true _=/home/ma-user/modelarts/ma-training-toolkit MA_JOB_START_TIME=1714998468 NCCL_SOCKET_IFNAME=eth0 MA_RUNNING_CNT=1 MA_INSTRUCT_TRAINING_PROC_START_TIME=2024-05-06-20-27-50]" file="process.go:142" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:51+08:00" level=info msg="start command successfully, pid: 362, command: [bash -c bash /home/ma-user/modelarts/run/run_train_v2.sh '/home/ma-user/modelarts/user-job-dir/resnet/resnet50_train.py' '--data_url=/home/ma-user/modelarts/inputs/data_url_0/' '--train_url=/home/ma-user/modelarts/outputs/train_url_0/' ]" file="process.go:147" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:51+08:00" level=info msg="zombie process cleaner is start running, childPid=362" file="cleaner_unix.go:31" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:51+08:00" level=info msg="user: uid=1000(ma-user) gid=100(ma-group) groups=100(ma-group),10000(HwHiAiUser)" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:51+08:00" level=info msg="pwd: /home/ma-user" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:51+08:00" level=info msg="boot_file: /home/ma-user/modelarts/user-job-dir/resnet/resnet50_train.py" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:51+08:00" level=info msg="command: /home/ma-user/modelarts/user-job-dir/resnet/resnet50_train.py --data_url=/home/ma-user/modelarts/inputs/data_url_0/ --train_url=/home/ma-user/modelarts/outputs/train_url_0/" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:51+08:00" level=info msg="local_code_dir: /home/ma-user/modelarts/user-job-dir/resnet" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:51+08:00" level=info msg="training start at 2024-05-06-20:27:51" Component=ShellScripts Platform=ModelArts-Service
+[ModelArts Service Log]install modelarts training system python packages
+[ModelArts Service Log]engine type is: ascend-powered-engine
+[ModelArts Service Log]python version: 3
+[ModelArts Service Log]package directory: /home/ma-user/modelarts/package
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple/
+Processing ./huawei_aiturbo_ckpt-1.0.0.post20231227145238-py3-none-any.whl
+Installing collected packages: huawei-aiturbo-ckpt
+Successfully installed huawei-aiturbo-ckpt-1.0.0.post20231227145238
+
+[notice] A new release of pip available: 22.1.2 -> 24.0
+[notice] To update, run: pip install --upgrade pip
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple/
+Processing ./moxing_framework-2.1.6.879ab2f4-py2.py3-none-any.whl
+Requirement already satisfied: Pillow>=3.3.1 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (9.2.0)
+Collecting protobuf<4,>=3.10.0
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/2a/7c/e7091f0eea6eec70547d28c6c0d8c7335ee58f6b13456608beec8c94a62a/protobuf-3.20.3-cp37-cp37m-manylinux2014_aarch64.whl (917 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 917.9/917.9 kB 37.2 MB/s eta 0:00:00
+Requirement already satisfied: pathlib2>=2.3.0 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (2.3.7.post1)
+Requirement already satisfied: numpy>=1.16.4 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (1.21.2)
+Requirement already satisfied: scipy>=1.1.0 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (1.5.4)
+Requirement already satisfied: six in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (1.16.0)
+Requirement already satisfied: urllib3>=1.26.2 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (1.26.10)
+Requirement already satisfied: lazy-import>=0.2.2 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (0.2.2)
+Requirement already satisfied: lxml>=4.1.0 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (4.4.2)
+Requirement already satisfied: certifi in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (2022.6.15)
+Requirement already satisfied: psutil>=5.4.6 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (5.7.0)
+Requirement already satisfied: PyYAML>=3.12 in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (5.3.1)
+Requirement already satisfied: setuptools in /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages (from moxing-framework==2.1.6.879ab2f4) (63.1.0)
+Installing collected packages: protobuf, moxing-framework
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 4.21.2
+    Uninstalling protobuf-4.21.2:
+      Successfully uninstalled protobuf-4.21.2
+  Attempting uninstall: moxing-framework
+    Found existing installation: moxing-framework 2.0.1.rc0.ffd1c0c8
+    Uninstalling moxing-framework-2.0.1.rc0.ffd1c0c8:
+      Successfully uninstalled moxing-framework-2.0.1.rc0.ffd1c0c8
+Successfully installed moxing-framework-2.1.6.879ab2f4 protobuf-3.20.3
+
+[notice] A new release of pip available: 22.1.2 -> 24.0
+[notice] To update, run: pip install --upgrade pip
+no found requirements.txt, skip requirements installing.
+time="2024-05-06T20:27:58+08:00" level=info msg="report event PretrainingStart success" file="event.go:95" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:27:58+08:00" level=info msg="pre train script use 0.124s" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-06T20:27:58+08:00" level=info msg="report event PretrainingFinish success" file="event.go:95" Command=report Component=ma-training-toolkit Platform=ModelArts-Service
+INFO:root:Using MoXing-v2.1.6.879ab2f4-879ab2f4
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+[ModelArts Service Log]2024-05-06 20:27:59,206 - INFO - Ascend Driver: Version=22.0.0.3
+[ModelArts Service Log]2024-05-06 20:27:59,206 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+[ModelArts Service Log]2024-05-06 20:27:59,206 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+[ModelArts Service Log]2024-05-06 20:27:59,207 - INFO - Davinci training command
+[ModelArts Service Log]2024-05-06 20:27:59,207 - INFO - ['/home/ma-user/anaconda/bin/python', '/home/ma-user/modelarts/user-job-dir/resnet/resnet50_train.py', '--data_url=/home/ma-user/modelarts/inputs/data_url_0/', '--train_url=/home/ma-user/modelarts/outputs/train_url_0/']
+[ModelArts Service Log]2024-05-06 20:27:59,207 - INFO - Route plan ends for env ROUTE_PLAN = false. Route plan acceleration service may not be available in this region
+[ModelArts Service Log]2024-05-06 20:27:59,207 - INFO - Wait for Rank table file ready
+[ModelArts Service Log]2024-05-06 20:27:59,207 - INFO - Rank table file /user/config/jobstart_hccl.json (K8S generated) is ready for read
+[ModelArts Service Log]2024-05-06 20:27:59,208 - INFO - 
+{
+    "status": "completed",
+    "group_count": "1",
+    "group_list": [
+        {
+            "group_name": "worker",
+            "device_count": "1",
+            "instance_count": "1",
+            "instance_list": [
+                {
+                    "pod_name": "ma-job-b7040e33-b9c9-4062-91b0-a7400d029b97-worker-0",
+                    "server_id": "192.168.0.208",
+                    "devices": [
+                        {
+                            "device_id": "0",
+                            "device_ip": "192.1.9.199"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+[ModelArts Service Log]2024-05-06 20:27:59,208 - INFO - Rank table file (V1)
+[ModelArts Service Log]2024-05-06 20:27:59,208 - INFO - 
+{
+    "status": "completed",
+    "version": "1.0",
+    "server_count": "1",
+    "server_list": [
+        {
+            "server_id": "192.168.0.208",
+            "device": [
+                {
+                    "device_id": "0",
+                    "device_ip": "192.1.9.199",
+                    "rank_id": "0"
+                }
+            ]
+        }
+    ]
+}
+[ModelArts Service Log]2024-05-06 20:27:59,209 - INFO - Rank table file (V1) is generated
+[ModelArts Service Log]2024-05-06 20:27:59,209 - INFO - archive rank table /user/config/jobstart_hccl.json to /home/ma-user/modelarts/log/2024-05-06-20-27-50/modelarts-job-b7040e33-b9c9-4062-91b0-a7400d029b97-template2-rank-table.json
+[ModelArts Service Log]2024-05-06 20:27:59,209 - INFO - archive rank table /home/ma-user/rank_table/jobstart_hccl.json to /home/ma-user/modelarts/log/2024-05-06-20-27-50/modelarts-job-b7040e33-b9c9-4062-91b0-a7400d029b97-template1-rank-table.json
+[ModelArts Service Log]2024-05-06 20:27:59,209 - INFO - set rank table RANK_TABLE_FILE env to /home/ma-user/rank_table/jobstart_hccl.json
+[ModelArts Service Log]2024-05-06 20:27:59,210 - INFO - Current server
+[ModelArts Service Log]2024-05-06 20:27:59,210 - INFO - 
+{
+    "server_id": "192.168.0.208",
+    "device": [
+        {
+            "device_id": "0",
+            "device_ip": "192.1.9.199",
+            "rank_id": "0"
+        }
+    ]
+}
+[ModelArts Service Log]2024-05-06 20:27:59,210 - INFO - Route plan ends for env ROUTE_PLAN = false. Route plan acceleration service may not be available in this region
+[ModelArts Service Log]2024-05-06 20:27:59,210 - INFO - The environment variable MA_TERMINATION_GRACE_PERIOD_SECONDS is set to 60, exponential backoff times will be set to 6
+[ModelArts Service Log]2024-05-06 20:27:59,211 - INFO - bootstrap proc-rank-0-device-0
+[ModelArts Service Log]2024-05-06 20:27:59,221 - INFO - proc-rank-0-device-0 (pid: 552)
+Download data.
+INFO:root:List OBS time cost: 0.09 seconds.
+INFO:root:pid: None.	1000/6714
+INFO:root:pid: None.	2000/6714
+INFO:root:pid: None.	3000/6714
+INFO:root:pid: None.	4000/6714
+INFO:root:pid: None.	5000/6714
+INFO:root:pid: None.	6000/6714
+INFO:root:Copy parallel total time cost: 0.57 seconds.
+Create train and evaluate dataset.
+Create dataset success.
+[WARNING] ME(552:281473351708688,MainProcess):2024-05-06-20:28:12.270.144 [mindspore/common/_decorator.py:37] 'TensorAdd' is deprecated from version 1.1 and will be removed in a future version, use 'Add' instead.
+Start run training, total epoch: 90.
+time="2024-05-06T20:29:53+08:00" level=info msg="NPU startup catched, taking 121 seconds" file="watch_routine.go:39" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:29:53+08:00" level=info msg="report event NPUProcStarted success" file="event.go:95" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 1 cost time = 508.7149701118469, train step num: 18810, one step time: 27.044921324393776 ms, train samples per second of cluster: 1183.2
+
+epoch: 1 step: 18810, loss is 0.7837822437286377
+epoch time: 515333.027 ms, per step time: 27.397 ms
+time="2024-05-06T20:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 2 cost time = 441.9296247959137, train step num: 18810, one step time: 23.494397915784887 ms, train samples per second of cluster: 1362.0
+
+epoch: 2 step: 18810, loss is 0.41933563351631165
+epoch time: 441933.526 ms, per step time: 23.495 ms
+time="2024-05-06T20:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 3 cost time = 442.3334970474243, train step num: 18810, one step time: 23.515869061532392 ms, train samples per second of cluster: 1360.8
+
+epoch: 3 step: 18810, loss is 0.20001676678657532
+epoch time: 442337.569 ms, per step time: 23.516 ms
+time="2024-05-06T20:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T20:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 4 cost time = 446.735023021698, train step num: 18810, one step time: 23.749868315879745 ms, train samples per second of cluster: 1347.4
+
+epoch: 4 step: 18810, loss is 0.17162194848060608
+epoch time: 446743.572 ms, per step time: 23.750 ms
+epoch 5 cost time = 441.2025372982025, train step num: 18810, one step time: 23.455743609686472 ms, train samples per second of cluster: 1364.3
+
+epoch: 5 step: 18810, loss is 0.33396589756011963
+epoch time: 442700.148 ms, per step time: 23.535 ms
+time="2024-05-06T21:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T21:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 6 cost time = 434.2163727283478, train step num: 18810, one step time: 23.084336668173727 ms, train samples per second of cluster: 1386.2
+
+epoch: 6 step: 18810, loss is 0.29929590225219727
+epoch time: 434221.418 ms, per step time: 23.085 ms
+time="2024-05-06T21:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T21:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 7 cost time = 439.06820607185364, train step num: 18810, one step time: 23.342275708232517 ms, train samples per second of cluster: 1370.9
+
+epoch: 7 step: 18810, loss is 0.40506821870803833
+epoch time: 439076.896 ms, per step time: 23.343 ms
+time="2024-05-06T21:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T21:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 8 cost time = 438.1062557697296, train step num: 18810, one step time: 23.29113534129344 ms, train samples per second of cluster: 1373.9
+
+epoch: 8 step: 18810, loss is 0.23271656036376953
+epoch time: 438121.639 ms, per step time: 23.292 ms
+epoch 9 cost time = 439.39146399497986, train step num: 18810, one step time: 23.35946113742583 ms, train samples per second of cluster: 1369.9
+
+epoch: 9 step: 18810, loss is 0.3010432720184326
+epoch time: 439396.160 ms, per step time: 23.360 ms
+time="2024-05-06T21:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T21:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 10 cost time = 441.1888008117676, train step num: 18810, one step time: 23.455013333958934 ms, train samples per second of cluster: 1364.3
+
+epoch: 10 step: 18810, loss is 0.033522360026836395
+epoch time: 442653.372 ms, per step time: 23.533 ms
+time="2024-05-06T21:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T21:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 11 cost time = 435.06005930900574, train step num: 18810, one step time: 23.129189755928003 ms, train samples per second of cluster: 1383.5
+
+epoch: 11 step: 18810, loss is 0.6180745363235474
+epoch time: 435065.048 ms, per step time: 23.129 ms
+epoch 12 cost time = 435.7570176124573, train step num: 18810, one step time: 23.166242297312987 ms, train samples per second of cluster: 1381.3
+
+epoch: 12 step: 18810, loss is 0.17714433372020721
+epoch time: 435765.855 ms, per step time: 23.167 ms
+time="2024-05-06T21:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T21:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 13 cost time = 439.17344188690186, train step num: 18810, one step time: 23.34787038207878 ms, train samples per second of cluster: 1370.6
+
+epoch: 13 step: 18810, loss is 0.29592299461364746
+epoch time: 439190.155 ms, per step time: 23.349 ms
+time="2024-05-06T22:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T22:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 14 cost time = 437.08770775794983, train step num: 18810, one step time: 23.236986058370537 ms, train samples per second of cluster: 1377.1
+
+epoch: 14 step: 18810, loss is 0.28502562642097473
+epoch time: 437092.232 ms, per step time: 23.237 ms
+time="2024-05-06T22:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T22:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 15 cost time = 437.9384412765503, train step num: 18810, one step time: 23.282213783973965 ms, train samples per second of cluster: 1374.4
+
+epoch: 15 step: 18810, loss is 0.4883081614971161
+epoch time: 439312.390 ms, per step time: 23.355 ms
+epoch 16 cost time = 437.11505460739136, train step num: 18810, one step time: 23.238439904699167 ms, train samples per second of cluster: 1377.0
+
+epoch: 16 step: 18810, loss is 0.08397311717271805
+epoch time: 437120.211 ms, per step time: 23.239 ms
+time="2024-05-06T22:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T22:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 17 cost time = 437.52797198295593, train step num: 18810, one step time: 23.2603919182858 ms, train samples per second of cluster: 1375.7
+
+epoch: 17 step: 18810, loss is 0.49220043420791626
+epoch time: 437536.850 ms, per step time: 23.261 ms
+time="2024-05-06T22:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T22:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 18 cost time = 439.4214987754822, train step num: 18810, one step time: 23.361057882800754 ms, train samples per second of cluster: 1369.8
+
+epoch: 18 step: 18810, loss is 0.2130187749862671
+epoch time: 439436.707 ms, per step time: 23.362 ms
+time="2024-05-06T22:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T22:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 19 cost time = 442.85650086402893, train step num: 18810, one step time: 23.543673623818655 ms, train samples per second of cluster: 1359.2
+
+epoch: 19 step: 18810, loss is 0.23322923481464386
+epoch time: 442865.447 ms, per step time: 23.544 ms
+epoch 20 cost time = 444.6439754962921, train step num: 18810, one step time: 23.63870151495439 ms, train samples per second of cluster: 1353.7
+
+epoch: 20 step: 18810, loss is 0.10663066059350967
+epoch time: 445987.617 ms, per step time: 23.710 ms
+time="2024-05-06T22:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T22:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 21 cost time = 440.2031481266022, train step num: 18810, one step time: 23.402612872227653 ms, train samples per second of cluster: 1367.4
+
+epoch: 21 step: 18810, loss is 0.1434294730424881
+epoch time: 440207.790 ms, per step time: 23.403 ms
+time="2024-05-06T23:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T23:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 22 cost time = 437.5307514667511, train step num: 18810, one step time: 23.260539684569437 ms, train samples per second of cluster: 1375.7
+
+epoch: 22 step: 18810, loss is 0.3092805743217468
+epoch time: 437534.769 ms, per step time: 23.261 ms
+time="2024-05-06T23:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T23:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 23 cost time = 442.84383845329285, train step num: 18810, one step time: 23.543000449404193 ms, train samples per second of cluster: 1359.2
+
+epoch: 23 step: 18810, loss is 0.055655285716056824
+epoch time: 442852.697 ms, per step time: 23.543 ms
+epoch 24 cost time = 440.6497371196747, train step num: 18810, one step time: 23.426354977122525 ms, train samples per second of cluster: 1366.0
+
+epoch: 24 step: 18810, loss is 0.14087599515914917
+epoch time: 440662.399 ms, per step time: 23.427 ms
+time="2024-05-06T23:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T23:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 25 cost time = 440.58202028274536, train step num: 18810, one step time: 23.422754932628674 ms, train samples per second of cluster: 1366.2
+
+epoch: 25 step: 18810, loss is 0.14780408143997192
+epoch time: 441925.148 ms, per step time: 23.494 ms
+time="2024-05-06T23:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T23:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 26 cost time = 440.2013716697693, train step num: 18810, one step time: 23.40251843007811 ms, train samples per second of cluster: 1367.4
+
+epoch: 26 step: 18810, loss is 0.037478141486644745
+epoch time: 440206.409 ms, per step time: 23.403 ms
+epoch 27 cost time = 441.6116247177124, train step num: 18810, one step time: 23.477492010511025 ms, train samples per second of cluster: 1363.0
+
+epoch: 27 step: 18810, loss is 0.018243685364723206
+epoch time: 441616.713 ms, per step time: 23.478 ms
+time="2024-05-06T23:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T23:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 28 cost time = 441.6611649990082, train step num: 18810, one step time: 23.480125730941424 ms, train samples per second of cluster: 1362.9
+
+epoch: 28 step: 18810, loss is 0.10370457172393799
+epoch time: 441665.337 ms, per step time: 23.480 ms
+time="2024-05-06T23:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-06T23:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 29 cost time = 444.82296991348267, train step num: 18810, one step time: 23.648217432933688 ms, train samples per second of cluster: 1353.2
+
+epoch: 29 step: 18810, loss is 0.18166573345661163
+epoch time: 444826.973 ms, per step time: 23.648 ms
+time="2024-05-07T00:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T00:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 30 cost time = 444.92260098457336, train step num: 18810, one step time: 23.653514140594012 ms, train samples per second of cluster: 1352.9
+
+epoch: 30 step: 18810, loss is 0.06669741123914719
+epoch time: 446469.628 ms, per step time: 23.736 ms
+epoch 31 cost time = 435.3003120422363, train step num: 18810, one step time: 23.14196236269199 ms, train samples per second of cluster: 1382.8
+
+epoch: 31 step: 18810, loss is 0.23584651947021484
+epoch time: 435305.239 ms, per step time: 23.142 ms
+time="2024-05-07T00:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T00:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 32 cost time = 439.7625026702881, train step num: 18810, one step time: 23.3791867448319 ms, train samples per second of cluster: 1368.7
+
+epoch: 32 step: 18810, loss is 0.0996875911951065
+epoch time: 439766.920 ms, per step time: 23.379 ms
+time="2024-05-07T00:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T00:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 33 cost time = 440.1474618911743, train step num: 18810, one step time: 23.39965241314058 ms, train samples per second of cluster: 1367.5
+
+epoch: 33 step: 18810, loss is 0.0740261971950531
+epoch time: 440152.041 ms, per step time: 23.400 ms
+time="2024-05-07T00:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T00:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 34 cost time = 443.40871143341064, train step num: 18810, one step time: 23.573030910867125 ms, train samples per second of cluster: 1357.5
+
+epoch: 34 step: 18810, loss is 0.07350669056177139
+epoch time: 443413.152 ms, per step time: 23.573 ms
+epoch 35 cost time = 440.6937117576599, train step num: 18810, one step time: 23.42869281008293 ms, train samples per second of cluster: 1365.8
+
+epoch: 35 step: 18810, loss is 0.15777790546417236
+epoch time: 441966.756 ms, per step time: 23.496 ms
+time="2024-05-07T00:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T00:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 36 cost time = 440.16542959213257, train step num: 18810, one step time: 23.40060763381885 ms, train samples per second of cluster: 1367.5
+
+epoch: 36 step: 18810, loss is 0.2442854791879654
+epoch time: 440170.691 ms, per step time: 23.401 ms
+time="2024-05-07T00:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T00:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 37 cost time = 441.85562109947205, train step num: 18810, one step time: 23.49046364165189 ms, train samples per second of cluster: 1362.3
+
+epoch: 37 step: 18810, loss is 0.21339264512062073
+epoch time: 441860.113 ms, per step time: 23.491 ms
+time="2024-05-07T01:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T01:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 38 cost time = 441.4158670902252, train step num: 18810, one step time: 23.467084906444722 ms, train samples per second of cluster: 1363.6
+
+epoch: 38 step: 18810, loss is 0.11731167882680893
+epoch time: 441420.296 ms, per step time: 23.467 ms
+epoch 39 cost time = 443.3667905330658, train step num: 18810, one step time: 23.570802261194356 ms, train samples per second of cluster: 1357.6
+
+epoch: 39 step: 18810, loss is 0.056314706802368164
+epoch time: 443371.346 ms, per step time: 23.571 ms
+time="2024-05-07T01:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T01:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 40 cost time = 446.4315857887268, train step num: 18810, one step time: 23.73373661822046 ms, train samples per second of cluster: 1348.3
+
+epoch: 40 step: 18810, loss is 0.04846782982349396
+epoch time: 447651.814 ms, per step time: 23.799 ms
+time="2024-05-07T01:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T01:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 41 cost time = 442.9237275123596, train step num: 18810, one step time: 23.547247608312578 ms, train samples per second of cluster: 1359.0
+
+epoch: 41 step: 18810, loss is 0.06436295062303543
+epoch time: 442927.747 ms, per step time: 23.547 ms
+time="2024-05-07T01:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T01:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 42 cost time = 439.50939440727234, train step num: 18810, one step time: 23.365730696824684 ms, train samples per second of cluster: 1369.5
+
+epoch: 42 step: 18810, loss is 0.14844614267349243
+epoch time: 439513.460 ms, per step time: 23.366 ms
+epoch 43 cost time = 444.14114141464233, train step num: 18810, one step time: 23.611969240544514 ms, train samples per second of cluster: 1355.2
+
+epoch: 43 step: 18810, loss is 0.15519686043262482
+epoch time: 444149.950 ms, per step time: 23.612 ms
+time="2024-05-07T01:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T01:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 44 cost time = 441.6644642353058, train step num: 18810, one step time: 23.480301128937043 ms, train samples per second of cluster: 1362.8
+
+epoch: 44 step: 18810, loss is 0.08590944856405258
+epoch time: 441681.573 ms, per step time: 23.481 ms
+time="2024-05-07T01:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T01:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 45 cost time = 438.0646710395813, train step num: 18810, one step time: 23.288924563507777 ms, train samples per second of cluster: 1374.0
+
+epoch: 45 step: 18810, loss is 0.08330521732568741
+epoch time: 439503.508 ms, per step time: 23.365 ms
+epoch 46 cost time = 438.2028181552887, train step num: 18810, one step time: 23.296268907777176 ms, train samples per second of cluster: 1373.6
+
+epoch: 46 step: 18810, loss is 0.058245979249477386
+epoch time: 438206.462 ms, per step time: 23.296 ms
+time="2024-05-07T02:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T02:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 47 cost time = 439.57374835014343, train step num: 18810, one step time: 23.369151959071953 ms, train samples per second of cluster: 1369.3
+
+epoch: 47 step: 18810, loss is 0.03681211546063423
+epoch time: 439577.622 ms, per step time: 23.369 ms
+time="2024-05-07T02:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T02:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 48 cost time = 441.7842388153076, train step num: 18810, one step time: 23.486668730213058 ms, train samples per second of cluster: 1362.5
+
+epoch: 48 step: 18810, loss is 0.023034656420350075
+epoch time: 441788.713 ms, per step time: 23.487 ms
+time="2024-05-07T02:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T02:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 49 cost time = 439.7973108291626, train step num: 18810, one step time: 23.381037258328686 ms, train samples per second of cluster: 1368.6
+
+epoch: 49 step: 18810, loss is 0.04562070593237877
+epoch time: 439801.373 ms, per step time: 23.381 ms
+time="2024-05-07T02:34:17+08:00" level=info msg="auth file has been updated" file="authentication.go:120" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2024-05-07T02:34:17+08:00" level=info msg="auth file has been updated" file="authentication.go:120" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url
+time="2024-05-07T02:34:17+08:00" level=info msg="auth file has been updated" file="authentication.go:120" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url
+time="2024-05-07T02:34:18+08:00" level=info msg="auth info has been updated" file="authentication.go:132" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2024-05-07T02:34:18+08:00" level=info msg="auth info has been updated" file="authentication.go:132" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url
+time="2024-05-07T02:34:26+08:00" level=info msg="auth info has been updated" file="authentication.go:132" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url
+epoch 50 cost time = 439.4629228115082, train step num: 18810, one step time: 23.363260117570874 ms, train samples per second of cluster: 1369.7
+
+epoch: 50 step: 18810, loss is 0.07101471722126007
+epoch time: 440938.941 ms, per step time: 23.442 ms
+time="2024-05-07T02:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T02:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 51 cost time = 442.62950372695923, train step num: 18810, one step time: 23.53160572711107 ms, train samples per second of cluster: 1359.9
+
+epoch: 51 step: 18810, loss is 0.2111857682466507
+epoch time: 442634.346 ms, per step time: 23.532 ms
+time="2024-05-07T02:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T02:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 52 cost time = 442.12082982063293, train step num: 18810, one step time: 23.504562988869374 ms, train samples per second of cluster: 1361.4
+
+epoch: 52 step: 18810, loss is 0.00849971640855074
+epoch time: 442125.181 ms, per step time: 23.505 ms
+time="2024-05-07T02:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T02:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 53 cost time = 438.3939609527588, train step num: 18810, one step time: 23.306430672661286 ms, train samples per second of cluster: 1373.0
+
+epoch: 53 step: 18810, loss is 0.001403958653099835
+epoch time: 438398.295 ms, per step time: 23.307 ms
+epoch 54 cost time = 438.5524353981018, train step num: 18810, one step time: 23.31485568304635 ms, train samples per second of cluster: 1372.5
+
+epoch: 54 step: 18810, loss is 0.06763464212417603
+epoch time: 438556.618 ms, per step time: 23.315 ms
+time="2024-05-07T03:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T03:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 55 cost time = 442.1531620025635, train step num: 18810, one step time: 23.506281871481313 ms, train samples per second of cluster: 1361.3
+
+epoch: 55 step: 18810, loss is 0.04021473601460457
+epoch time: 443600.284 ms, per step time: 23.583 ms
+time="2024-05-07T03:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T03:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 56 cost time = 440.7790729999542, train step num: 18810, one step time: 23.433230887823193 ms, train samples per second of cluster: 1365.6
+
+epoch: 56 step: 18810, loss is 0.16834202408790588
+epoch time: 440784.050 ms, per step time: 23.433 ms
+time="2024-05-07T03:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T03:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 57 cost time = 441.0328299999237, train step num: 18810, one step time: 23.44672142477 ms, train samples per second of cluster: 1364.8
+
+epoch: 57 step: 18810, loss is 0.11698457598686218
+epoch time: 441036.861 ms, per step time: 23.447 ms
+epoch 58 cost time = 436.9639377593994, train step num: 18810, one step time: 23.23040604781496 ms, train samples per second of cluster: 1377.5
+
+epoch: 58 step: 18810, loss is 0.017571819946169853
+epoch time: 436972.926 ms, per step time: 23.231 ms
+time="2024-05-07T03:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T03:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 59 cost time = 439.1520233154297, train step num: 18810, one step time: 23.346731702043044 ms, train samples per second of cluster: 1370.6
+
+epoch: 59 step: 18810, loss is 0.11473803222179413
+epoch time: 439165.957 ms, per step time: 23.347 ms
+time="2024-05-07T03:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T03:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 60 cost time = 441.25298166275024, train step num: 18810, one step time: 23.458425394085605 ms, train samples per second of cluster: 1364.1
+
+epoch: 60 step: 18810, loss is 0.08934228122234344
+epoch time: 442735.899 ms, per step time: 23.537 ms
+epoch 61 cost time = 439.1629934310913, train step num: 18810, one step time: 23.347314908617296 ms, train samples per second of cluster: 1370.6
+
+epoch: 61 step: 18810, loss is 0.009531247429549694
+epoch time: 439167.766 ms, per step time: 23.348 ms
+time="2024-05-07T03:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T03:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 62 cost time = 435.30204153060913, train step num: 18810, one step time: 23.142054307847374 ms, train samples per second of cluster: 1382.8
+
+epoch: 62 step: 18810, loss is 0.00044541197712533176
+epoch time: 435305.998 ms, per step time: 23.142 ms
+time="2024-05-07T04:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T04:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 63 cost time = 440.5408811569214, train step num: 18810, one step time: 23.420567844599756 ms, train samples per second of cluster: 1366.3
+
+epoch: 63 step: 18810, loss is 0.003601348726078868
+epoch time: 440544.710 ms, per step time: 23.421 ms
+time="2024-05-07T04:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T04:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 64 cost time = 440.4966447353363, train step num: 18810, one step time: 23.41821609438258 ms, train samples per second of cluster: 1366.5
+
+epoch: 64 step: 18810, loss is 0.034684281796216965
+epoch time: 440500.934 ms, per step time: 23.418 ms
+epoch 65 cost time = 442.75883769989014, train step num: 18810, one step time: 23.53848153641096 ms, train samples per second of cluster: 1359.5
+
+epoch: 65 step: 18810, loss is 0.006178490351885557
+epoch time: 444030.693 ms, per step time: 23.606 ms
+time="2024-05-07T04:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T04:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 66 cost time = 437.07432746887207, train step num: 18810, one step time: 23.23627471923828 ms, train samples per second of cluster: 1377.2
+
+epoch: 66 step: 18810, loss is 0.07330784201622009
+epoch time: 437078.971 ms, per step time: 23.237 ms
+time="2024-05-07T04:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T04:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 67 cost time = 442.4110219478607, train step num: 18810, one step time: 23.51999053417654 ms, train samples per second of cluster: 1360.5
+
+epoch: 67 step: 18810, loss is 0.04403723403811455
+epoch time: 442414.873 ms, per step time: 23.520 ms
+time="2024-05-07T04:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T04:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 68 cost time = 439.785049200058, train step num: 18810, one step time: 23.380385390752682 ms, train samples per second of cluster: 1368.7
+
+epoch: 68 step: 18810, loss is 0.0010239598341286182
+epoch time: 439789.329 ms, per step time: 23.381 ms
+epoch 69 cost time = 437.34178161621094, train step num: 18810, one step time: 23.25049344052158 ms, train samples per second of cluster: 1376.3
+
+epoch: 69 step: 18810, loss is 0.008778123185038567
+epoch time: 437345.809 ms, per step time: 23.251 ms
+time="2024-05-07T04:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T04:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 70 cost time = 439.2207636833191, train step num: 18810, one step time: 23.35038616072935 ms, train samples per second of cluster: 1370.4
+
+epoch: 70 step: 18810, loss is 0.0011943124700337648
+epoch time: 440758.404 ms, per step time: 23.432 ms
+time="2024-05-07T05:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T05:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 71 cost time = 439.274551153183, train step num: 18810, one step time: 23.353245675342 ms, train samples per second of cluster: 1370.3
+
+epoch: 71 step: 18810, loss is 0.0015929979272186756
+epoch time: 439278.714 ms, per step time: 23.353 ms
+time="2024-05-07T05:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T05:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 72 cost time = 440.66605138778687, train step num: 18810, one step time: 23.42722229600143 ms, train samples per second of cluster: 1365.9
+
+epoch: 72 step: 18810, loss is 0.001089868601411581
+epoch time: 440670.008 ms, per step time: 23.427 ms
+epoch 73 cost time = 439.0352232456207, train step num: 18810, one step time: 23.340522235280208 ms, train samples per second of cluster: 1371.0
+
+epoch: 73 step: 18810, loss is 0.0069068861193954945
+epoch time: 439044.047 ms, per step time: 23.341 ms
+time="2024-05-07T05:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T05:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 74 cost time = 438.8187482357025, train step num: 18810, one step time: 23.329013728639154 ms, train samples per second of cluster: 1371.7
+
+epoch: 74 step: 18810, loss is 0.00030865936423651874
+epoch time: 438836.956 ms, per step time: 23.330 ms
+time="2024-05-07T05:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T05:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 75 cost time = 436.6066918373108, train step num: 18810, one step time: 23.21141370745937 ms, train samples per second of cluster: 1378.6
+
+epoch: 75 step: 18810, loss is 0.0005941097624599934
+epoch time: 438059.931 ms, per step time: 23.289 ms
+epoch 76 cost time = 437.60673570632935, train step num: 18810, one step time: 23.264579250735213 ms, train samples per second of cluster: 1375.5
+
+epoch: 76 step: 18810, loss is 0.0053346045315265656
+epoch time: 437611.608 ms, per step time: 23.265 ms
+time="2024-05-07T05:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T05:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 77 cost time = 437.01631593704224, train step num: 18810, one step time: 23.233190639927816 ms, train samples per second of cluster: 1377.3
+
+epoch: 77 step: 18810, loss is 0.00013121322263032198
+epoch time: 437020.767 ms, per step time: 23.233 ms
+time="2024-05-07T05:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T05:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 78 cost time = 439.4703755378723, train step num: 18810, one step time: 23.36365632843553 ms, train samples per second of cluster: 1369.6
+
+epoch: 78 step: 18810, loss is 2.204835254815407e-05
+epoch time: 439479.252 ms, per step time: 23.364 ms
+time="2024-05-07T06:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T06:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 79 cost time = 441.2942090034485, train step num: 18810, one step time: 23.460617171900505 ms, train samples per second of cluster: 1364.0
+
+epoch: 79 step: 18810, loss is 0.00016121506632771343
+epoch time: 441310.676 ms, per step time: 23.461 ms
+epoch 80 cost time = 438.34001207351685, train step num: 18810, one step time: 23.303562577007806 ms, train samples per second of cluster: 1373.2
+
+epoch: 80 step: 18810, loss is 0.04446130245923996
+epoch time: 439707.943 ms, per step time: 23.376 ms
+time="2024-05-07T06:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T06:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 81 cost time = 439.45912051200867, train step num: 18810, one step time: 23.36305797512008 ms, train samples per second of cluster: 1369.7
+
+epoch: 81 step: 18810, loss is 1.3709001223105588e-06
+epoch time: 439468.709 ms, per step time: 23.364 ms
+time="2024-05-07T06:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T06:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 82 cost time = 435.93490624427795, train step num: 18810, one step time: 23.17569942819128 ms, train samples per second of cluster: 1380.8
+
+epoch: 82 step: 18810, loss is 4.6005086915101856e-05
+epoch time: 435941.995 ms, per step time: 23.176 ms
+time="2024-05-07T06:37:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T06:37:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 83 cost time = 439.3112359046936, train step num: 18810, one step time: 23.355195954529165 ms, train samples per second of cluster: 1370.1
+
+epoch: 83 step: 18810, loss is 0.001349064172245562
+epoch time: 439323.210 ms, per step time: 23.356 ms
+epoch 84 cost time = 443.64229345321655, train step num: 18810, one step time: 23.58544888108541 ms, train samples per second of cluster: 1356.8
+
+epoch: 84 step: 18810, loss is 0.009013736620545387
+epoch time: 443646.404 ms, per step time: 23.586 ms
+time="2024-05-07T06:47:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T06:47:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 85 cost time = 442.6052849292755, train step num: 18810, one step time: 23.53031817805824 ms, train samples per second of cluster: 1359.9
+
+epoch: 85 step: 18810, loss is 0.00010609152377583086
+epoch time: 443931.017 ms, per step time: 23.601 ms
+time="2024-05-07T06:57:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T06:57:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 86 cost time = 437.6731216907501, train step num: 18810, one step time: 23.268108542836263 ms, train samples per second of cluster: 1375.3
+
+epoch: 86 step: 18810, loss is 6.662118539679796e-05
+epoch time: 437677.878 ms, per step time: 23.268 ms
+time="2024-05-07T07:07:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:07:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 87 cost time = 444.011269569397, train step num: 18810, one step time: 23.60506483622525 ms, train samples per second of cluster: 1355.6
+
+epoch: 87 step: 18810, loss is 0.0006417028489522636
+epoch time: 444015.739 ms, per step time: 23.605 ms
+epoch 88 cost time = 438.78907012939453, train step num: 18810, one step time: 23.327435945209704 ms, train samples per second of cluster: 1371.8
+
+epoch: 88 step: 18810, loss is 0.003654602449387312
+epoch time: 438793.236 ms, per step time: 23.328 ms
+time="2024-05-07T07:17:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:17:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 89 cost time = 435.6134955883026, train step num: 18810, one step time: 23.158612205651387 ms, train samples per second of cluster: 1381.8
+
+epoch: 89 step: 18810, loss is 0.00016484444495290518
+epoch time: 435617.344 ms, per step time: 23.159 ms
+time="2024-05-07T07:27:41+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:302" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:27:41+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+epoch 90 cost time = 440.81839871406555, train step num: 18810, one step time: 23.435321569062495 ms, train samples per second of cluster: 1365.5
+
+epoch: 90 step: 18810, loss is 0.004747382830828428
+epoch time: 442179.918 ms, per step time: 23.508 ms
+Upload checkpoint.
+INFO:root:List OBS time cost: 0.00 seconds.
+INFO:root:Copy parallel total time cost: 1.11 seconds.
+ResNet50 training success!
+
+[ModelArts Service Log]2024-05-07 07:30:13,832 - INFO - Begin destroy training processes
+[ModelArts Service Log]2024-05-07 07:30:13,834 - INFO - proc-rank-0-device-0 (pid: 552) has exited before receiving the term signal
+[ModelArts Service Log]2024-05-07 07:30:13,835 - INFO - End destroy training processes
+time="2024-05-07T07:30:13+08:00" level=info msg="the run_train script is exiting..." Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-07T07:30:13+08:00" level=info msg="the run_train 362 script is exited with 0" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-07T07:30:13+08:00" level=warning msg="waiting for user command process, but got ECHILD error" file="process.go:168" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:13+08:00" level=info msg="command is exit with 0" file="process.go:178" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:13+08:00" level=info msg="detected pattern: map[]\n" file="process.go:197" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:13+08:00" level=info msg="device log export result is false" file="listener.go:183" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:13+08:00" level=info msg="start parse ascend log, current time is :2024-05-07 07:30:13" file="ascend_log_handler.go:220" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:13+08:00" level=info msg="zombie process cleaner is exiting" file="cleaner_unix.go:53" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:13+08:00" level=info msg="ascend_fd binary found, path: /home/ma-user/modelarts/package/ascend-fd" file="executor.go:220" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:13+08:00" level=info msg="we will look for log files in the following paths:\n1. --host_log: config is , default path is /{log_path}, file pattern: messages-during-ma-job-{job_id}-worker-{task_id}.log\n2. --train_log: config is /home/ma-user/modelarts/log/2024-05-06-20-27-50, default path is /{log_path}/{instruct_training_proc_start_time}, file pattern: modelarts-job-{job_id}-proc-rank-{rank_id}-device-{device_id}.txt\n3. --process_log: config is , default path is /{log_path}/modelarts-job-{job_id}/ascend/process_log, specified by the env ASCEND_PROCESS_LOG_PATH, file pattern: plog-{pid}_{timestamp}.log\n4. --device_log: default path is /modelarts-job-{job_id}/maos-node-agent/ascend/device-log/\n5. --env_check: default path is /{log_path}/modelarts-job-{job_id}/ascend/environment_check/\n" file="executor.go:69" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+The parse job starts. Please wait.
+These job ['KNOWLEDGE_GRAPH', 'NET_CONGESTION', 'ROOT_CLUSTER', 'NODE_ANOMALY'] succeeded.
+The parse job is complete.
+time="2024-05-07T07:30:19+08:00" level=info msg="parse ascend logs by ascend-fd successful, outputPath is /home/ma-user/modelarts/log/modelarts-job-b7040e33-b9c9-4062-91b0-a7400d029b97/ascend/2024-05-06-20-27-50/fault_diag_data/worker-0" file="executor.go:74"
+time="2024-05-07T07:30:19+08:00" level=info msg="parse ascend log successfully, cost time is :5.719606772s" file="ascend_log_handler.go:231" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/modelarts-job-b7040e33-b9c9-4062-91b0-a7400d029b97/ascend/2024-05-06-20-27-50/fault_diag_data/" file="upload.go:207" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service Task=parsedAscendLogUpload
+time="2024-05-07T07:30:19+08:00" level=info msg="obs dir = /wolf-dl-bj4/ResNet-50/log/modelarts-job-b7040e33-b9c9-4062-91b0-a7400d029b97/ascend/2024-05-06-20-27-50/auto_diagnose" file="upload.go:210" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service Task=parsedAscendLogUpload
+time="2024-05-07T07:30:19+08:00" level=info msg="num of workers = 8" file="upload.go:215" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service Task=parsedAscendLogUpload
+time="2024-05-07T07:30:19+08:00" level=info msg="MA_OUTPUT_PRELOAD_SUFFIX: ." file="preload.go:27" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service Task=parsedAscendLogUpload
+time="2024-05-07T07:30:19+08:00" level=info msg="modelarts output channel preload to memarts switch is: false." file="preload.go:40" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service Task=parsedAscendLogUpload
+time="2024-05-07T07:30:19+08:00" level=info msg="upload parsed ascend log successfully" file="ascend_log_handler.go:237" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="event listener(name: startAndWait) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="event(name: UserProcessTerminatedEvent, msg: ) is being handled, len: 0" file="controller.go:72" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="all task worker exited with 0, will complete training" file="handler.go:445" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="done handling event(name: UserProcessTerminatedEvent, msg: ), started listeners: [instructAllOK]" file="controller.go:86" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="event listener(name: instructAllOK) sync=false started" file="controller.go:115" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="event listener(name: instructAllOK) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="event(name: InstructedAllExitEvent, msg: ) is being handled, len: 0" file="controller.go:72" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="the number of event listener is zero, registration is not required" file="controller.go:99" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="done handling event(name: InstructedAllExitEvent, msg: ), will exit with 0" file="controller.go:77" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="dynamic profiling config watcher has exited" file="watcher.go:77" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="trainingProcHang metric file watcher has exited" file="watcher.go:78" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="context is closing, shutting down the http server" file="server.go:51" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="hang metric write listener is exiting" file="listener.go:573" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="dynamic profiling config file listener is exiting" file="listener.go:640" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="event listener(name: watchDynamicProfiling) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="http server shutdown successfully" file="server.go:58" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="event listener(name: listenAndServe) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="event listener(name: watchHangMetric) sync=false exited" file="controller.go:112" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="controller exit with 0" file="controller.go:92" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="the post-training script(ma-post-end.sh) not found on env, bootfile dir, or code dir, skipping execution" file="run_train.go:1032" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="post runtime info collection started" file="run_train.go:1178" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="skip collecting nfs_metrics, reason: MA_NFS_MOUNT_VOLUMES env is not found" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="collect metrics for NPU memory diagnose started" file="collector_npu.go:78" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="skip collecting ib_stats, reason: not an infiniband job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=warning msg="ascend-dmi executor create failed, error: ascend-dmi is not found in the /usr/local/Ascend/toolbox path, skip ascend-dmi after check step" file="ascend_check.go:140" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="collect metrics for NPU congestion diagnose started" file="collector_npu.go:35" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="skip collecting ib_abnormal_physical_state, reason: not an infiniband job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="skip collecting mountstats, reason: MA_NFS_MOUNT_VOLUMES env is not found" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="skip collecting nvlink_status, reason: not a gpu job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="skip collecting gpu_info, reason: not a gpu job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:19+08:00" level=info msg="skip collecting fabric_manager_status, reason: not a gpu job" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:20+08:00" level=info msg="skip collecting node_iowait, reason: no valid prom metrics in response" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:20+08:00" level=warning msg="collect core num failed, will set core num val to 0, err: empty prometheus response" file="collector_npu.go:140" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:20+08:00" level=info msg="skip collecting node_ssd_usage, reason: no valid prom metrics in response" file="collector.go:158" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:20+08:00" level=info msg="collect metrics for NPU memory diagnose finished" file="collector_npu.go:125" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:20+08:00" level=warning msg="collect node memory usage failed, err: empty prometheus response" file="collector_npu.go:153" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:20+08:00" level=warning msg="collect iowait failed, err: empty prometheus response" file="collector_npu.go:167" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:21+08:00" level=info msg="collect metrics for NPU congestion diagnose finished" file="collector_npu.go:71" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:21+08:00" level=info msg="skip collecting ascend_log_parse_result, reason: empty results" file="collector.go:162" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:24+08:00" level=info msg="post runtime info collection finished" file="run_train.go:1194" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:24+08:00" level=info msg="report event TrainingExit success" file="event.go:95" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:24+08:00" level=info msg="bootstrap is exiting with exit code 0" file="bootstrap.go:306" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:24+08:00" level=info msg="retCode 0 has been written to the retCode file /home/ma-user/modelarts/retCode" file="bootstrap.go:286" Command=bootstrap/run Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:24+08:00" level=info msg="[sidecar] training is completed" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-07T07:30:24+08:00" level=info msg="[sidecar] stop toolkit_obs_upload_by_channels_pid = 57 by signal SIGTERM" Component=ShellScripts Platform=ModelArts-Service
+time="2024-05-07T07:30:24+08:00" level=info msg="retcode file already exists" file="analyzer.go:284" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:24+08:00" level=info msg="analyzer is diagnosing due to exit of training container" file="analyzer.go:306" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:24+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:410" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:24+08:00" level=info msg="analyzer has exited" file="analyzer.go:308" Command=analyze Component=ma-training-toolkit Platform=ModelArts-Service
+time="2024-05-07T07:30:25+08:00" level=info msg="the final upload is in progress..." file="upload.go:232" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=srt_log_collection
+time="2024-05-07T07:30:25+08:00" level=info msg="the final upload is in progress..." file="upload.go:232" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=train_url
+time="2024-05-07T07:30:25+08:00" level=info msg="the final upload is in progress..." file="upload.go:232" Command=obs/upload_by_channels Component=ma-training-toolkit Platform=ModelArts-Service Task=log_url

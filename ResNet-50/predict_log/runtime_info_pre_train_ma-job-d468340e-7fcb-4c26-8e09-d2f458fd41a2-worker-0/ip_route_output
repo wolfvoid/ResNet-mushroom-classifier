@@ -1,0 +1,11 @@
+default via 172.16.0.113 dev eth0 
+169.254.169.254 via 172.16.0.113 dev eth0 
+172.16.0.0/16 dev eth0 proto kernel scope link src 172.16.0.126 
+192.168.0.0/24 via 172.16.0.113 dev eth0 
+broadcast 127.0.0.0 dev lo table local proto kernel scope link src 127.0.0.1 
+local 127.0.0.0/8 dev lo table local proto kernel scope host src 127.0.0.1 
+local 127.0.0.1 dev lo table local proto kernel scope host src 127.0.0.1 
+broadcast 127.255.255.255 dev lo table local proto kernel scope link src 127.0.0.1 
+broadcast 172.16.0.0 dev eth0 table local proto kernel scope link src 172.16.0.126 
+local 172.16.0.126 dev eth0 table local proto kernel scope host src 172.16.0.126 
+broadcast 172.16.255.255 dev eth0 table local proto kernel scope link src 172.16.0.126 
